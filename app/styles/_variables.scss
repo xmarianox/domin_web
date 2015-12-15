@@ -1,0 +1,37 @@
+// variables
+
+// colours
+$white: #ffffff;
+$black: #000000;
+$black-50: rgba(0,0,0,.5);
+$gray: #ebe9e9;
+$gray2: #dfdcdc;
+$blue: #013d93;
+$light-blue: #319fd8;
+$dark-blue: #021B41;
+$yellow: #ffff33;
+$red: #ed2d37;
+$brown: #aa3f40;
+
+// items menu color
+$orange: #DD8E69;
+$light-orange: #EABB69;
+$light-brown: #C5A28D;
+$light-green: #BCB974;
+$dark-green: #9FBAA3;
+
+// fonts
+$futuraMD: 'futura_md_btmedium';
+
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 1280px;
+
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";
+
+/* animate button */
+$button-size : 2.5rem;
+/* increase this to see the transformations in slow-motion */
+$button-transition: .3s;
