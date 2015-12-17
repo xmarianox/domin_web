@@ -9,34 +9,33 @@ Tambien te adjunto los bocetos que hice hace un tiempo solo para que recuerdes e
 * MARITIMO con 2 botones que despliegan o productos (son 7 categorias, hay que agregar una flecha a la derecha para que se vea el 7mo) o servicios (son 4 categorias). cada categoria tiene una o mas fotos que se pasan con las flechitas.
 * CONTACTO con mapa, info y form.
 
-
 Abajo te pego texto en español e ingles, uno sobre el otro:
 
-QUIENES SOMOS
+## QUIENES SOMOS
 Nuestra Empresa ofrece servicios y provisión de equipos de protección, seguridad personal y de lucha contra incendio en embarcaciones y en tierra tanto a organizaciones civiles o empresas privadas como a las Fuerzas Militares y de Seguridad. Para ello contamos con una experiencia de más de 50 años en la actividad, teniendo también una amplitud de representaciones internacionales como así también el aval de las más importantes sociedades de clasificación. Además podemos ofrecerle al cliente un servicio dinámico y eficiente en los distintos puertos del país en los cuales poseemos representantes.
-ABOUT US
+## ABOUT US
 Our Company offers service, maintenance and provision of safety and fire fighting elements on ships, offshore, industrial plants, buildings for private companies, military and defense forces. We, therefore count with more than 50 years experience on the subject, having a number of international representations and the endorsement of the most important classification societies. We can also offer the costumer a dynamic and effective service on our different country ports in which we have representatives.
 
-CERTIFICACIONES / CERTIFICATIONS
-https://www.fujikura-lifesaving.jp/en/ship/list.html
-http://survitecgroup.com/brands/dsb
-http://www.rfdbeaufort.com/
-http://www.surviteczodiac.com/
-https://www.dnvgl.com/
-http://www.bureauveritas.com/
-http://www.buenosaires.gob.ar/defensaconsumidor/matafuegos
-http://ww2.eagle.org/en.html
-http://www.iram.org.ar/
-http://www.lr.org/en/marine/
-https://www.classnk.or.jp/hp/en/index.html
-http://www.opds.gba.gov.ar/
-http://www.prefecturanaval.gov.ar/web/es/html/portada.php
-http://www.rina.org/en
+## CERTIFICACIONES / CERTIFICATIONS
+* https://www.fujikura-lifesaving.jp/en/ship/list.html
+* http://survitecgroup.com/brands/dsb
+* http://www.rfdbeaufort.com/
+* http://www.surviteczodiac.com/
+* https://www.dnvgl.com/
+* http://www.bureauveritas.com/
+* http://www.buenosaires.gob.ar/defensaconsumidor/matafuegos
+* http://ww2.eagle.org/en.html
+* http://www.iram.org.ar/
+* http://www.lr.org/en/marine/
+* https://www.classnk.or.jp/hp/en/index.html
+* http://www.opds.gba.gov.ar/
+* http://www.prefecturanaval.gov.ar/web/es/html/portada.php
+* http://www.rina.org/en
 
 
-TERRESTRE
-Productos
-Domin Productos - TERRESTRE
+## TERRESTRE
+* Productos - TERRESTRE
+
 EXTINTORES: FOTOS: 47  (FIRE EXTINGUISHERS)
 EXTINTORES DE TODO TIPO Y CAPACIDAD: CO2, POLVO,
 ESPUMAS, AGUA, HALON, ACETATO DE POTASIO, ETC. PORTATILES Y RODANTES
@@ -63,7 +62,7 @@ asesoramiento, provisión de proyectos, montajes, provisión de partes o element
 
 ADVICE, PROJECTS PROVISION, ASSEMBLY AND PROVISION OF MATERIALS FOR FIXED FIRE EXTINGUISHING SYSTEMS.
 
-Servicios
+* Servicios
 
 EXTINTORES: FOTO 47 – FIRE EXTINGUISHERS
 SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.
@@ -81,10 +80,9 @@ authorized by g.c.b.a for the manufacture, installation, manteinance and repair 
 disposition 415 & 5295 (city of buenos aires government)
 disposition 639 & resolution 643 (gubernamental agency of control)
 
-MARITIMO
-Productos
+## MARITIMO
+* PRODUCTOS – MARITIMO 
 
-DOMIN PRODUCTOS – MARITIMO 
 PIROTECNIA: FOTOS 14 / 16 / 15 / 20 / 22 / 24 (PYROTECHNICS)
 PIROTECNIA DE SEGURIDAD NAVAL APROBADA POR SOLAS, SEÑALES OPTICAS, BOYAS DE AUTOENCENDIDO, ETC
 SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC
@@ -114,7 +112,7 @@ DETECTORES DE GASES PERSONALES. 
 PERSONAL GAS DETECTORS
 
 
-Servicios
+* Servicios
 
 BALSAS SALVAVIDAS: FOTO 48 – AUTOINFLATABLE LIFERAFTS
 INSPECCION, MANTENIMIENTO Y CERTIFICACION DE BALSAS SALVAVIDAS AUTOINFLABLES SEGÚN NORMAS IMO 761(A)18. ESTACION DE SERVICIO APROBADA POR PNA.

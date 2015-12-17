@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Domin</title>
+    <title>GUILLERMO DOMIN S.R.L.</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -25,6 +25,133 @@
   <body>
     <!--[if lt IE 10]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
 
+    <main>
+      <header>
+        <a class="logo logo_domin" title="GUILLERMO DOMIN S.R.L"></a>
+        <button class="lines-button x" type="button" role="button" aria-label="Toggle Navigation">
+          <span class="lines"></span>
+        </button>
+        <ul class="menu">
+          <li><a href="#quienesSomosView" title="QUIENES SOMOS">QUIENES SOMOS</a></li>
+          <li><a href="#certificacionesView" title="CERTIFICACIONES">CERTIFICACIONES</a></li>
+          <li><a href="#terrestreView" title="TERRESTRE">TERRESTRE</a></li>
+          <li><a href="#maritimoView" title="MARÍTIMO">MARÍTIMO</a></li>
+          <li><a href="#contactoView" title="CONTACTO">CONTACTO</a></li>
+        </ul>
+      </header>
+
+      <article>
+        <section id="quienesSomosView">
+          {{ quienesSomosTemplate }}
+        </section>
+
+        <script id="quienesSomosTemplate" type="text/x-handlebars-template">
+          <h1>INSTALACIONES Y EXTINTORES CONTRA INCENDIO</h1>
+          <p>Proyecto, montaje y mantenimiento de instalaciones especiales</p>
+
+          <div>
+            <h2>GUILLERMO DOMIN S.R.L.</h2>
+            <h3>QUIENES SOMOS</h3>
+            <p>Nuestra Empresa ofrece servicios y provisión de equipos de protección, seguridad personal y de lucha contra incendio en embarcaciones y en tierra tanto a organizaciones civiles o empresas privadas como a las Fuerzas Militares y de Seguridad. Para ello contamos con una experiencia de más de 50 años en la actividad, teniendo también una amplitud de representaciones internacionales como así también el aval de las más importantes sociedades de clasificación. Además podemos ofrecerle al cliente un servicio dinámico y eficiente en los distintos puertos del país en los cuales poseemos representantes.</p>
+          </div>
+        </script>
+
+        <section id="certificacionesView">
+          <h1>{{ CERTIFICACIONES }}</h1>
+
+          <ul>
+            <li>https://www.fujikura-lifesaving.jp/en/ship/list.html</li>
+            <li>http://survitecgroup.com/brands/dsb</li>
+            <li>http://www.rfdbeaufort.com/</li>
+            <li>http://www.surviteczodiac.com/</li>
+            <li>https://www.dnvgl.com/</li>
+            <li>http://www.bureauveritas.com/</li>
+            <li>http://www.buenosaires.gob.ar/defensaconsumidor/matafuegos</li>
+            <li>http://ww2.eagle.org/en.html</li>
+            <li>http://www.iram.org.ar/</li>
+            <li>http://www.lr.org/en/marine/</li>
+            <li>https://www.classnk.or.jp/hp/en/index.html</li>
+            <li>http://www.opds.gba.gov.ar/</li>
+            <li>http://www.prefecturanaval.gov.ar/web/es/html/portada.php</li>
+            <li>http://www.rina.org/en</li>
+          </ul>
+        </section>
+
+        <section id="terrestreView">
+          <h1>{{ TERRESTRE }}</h1>
+          <a href="" title="productos">productos</a>
+          <a href="" title="servicios">servicios</a>
+
+          <div>
+            <figure>
+              <img src="" alt="">
+              <figcaption>
+                <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
+              </figcaption>
+            </figure><!-- Item 1 -->
+
+            <figure>
+              <img src="" alt="">
+              <figcaption>
+                <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
+              </figcaption>
+            </figure><!-- Item 2 -->
+
+            <figure>
+              <img src="" alt="">
+              <figcaption>
+                <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
+              </figcaption>
+            </figure><!-- Item 3 -->
+          </div>
+        </section>
+
+        <section id="maritimoView">
+          <h1>MARITIMO</h1>
+          <a href="" title="productos">productos</a>
+          <a href="" title="servicios">servicios</a>
+        </section>
+
+        <section id="contactoView">
+          <h1>contacto</h1>
+
+          ubicación
+          Jose E. Colombres 2379, Munro (1605)
+          Buenos Aires – Argentina
+
+          online
+          <a href="http://www.gdominsrl.com.ar" title="www.gdominsrl.com.ar">www.gdominsrl.com.ar</a>
+          <a href="mailto:info@gdominsrl.com.ar" title="info@gdominsrl.com.ar">info@gdominsrl.com.ar</a>
+
+          teléfonos
+          +54 11 4756-1414
+          (Líneas Rotativas)
+
+
+          <form>
+
+            <div class="form-control">
+              <input type="text" id="name" name="name" placeHolder="{{ nameUSer }}">
+            </div>
+
+            <div class="form-control">
+              <input type="email" id="email" name="email" placeHolder="{{ e-mail }}">
+            </div>
+
+            <div class="form-control">
+              <textarea id="message" name="message" placeHolder="{{ message }}"></textarea>
+            </div>
+
+            <div class="form-control">
+              <button>{{ submit }}</button>
+            </div>
+          </form>
+
+        </section>
+
+      </article>
+    </main>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -33,6 +160,11 @@
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- Aload.js -->
+    <script>
+      function aload(t){"use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t}
     </script>
 
     <!-- build:js scripts/vendor.js -->

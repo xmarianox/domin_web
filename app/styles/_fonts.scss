@@ -1,0 +1,12 @@
+// _fonts.scss
+
+// Teko Light
+@include font-face('tekolight', '../fonts/tekolight');
+// Teko Regular
+@include font-face('teko_regularregular', '../fonts/teko_regularregular');
+// Teko Medium
+@include font-face('tekomedium', '../fonts/tekomedium');
+// Teko Semibold
+@include font-face('tekosemibold', '../fonts/tekosemibold');
+// Teko Bold
+@include font-face('tekobold', '../fonts/tekobold');

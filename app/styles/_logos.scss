@@ -1,0 +1,12 @@
+// =============================================================================
+// _logos
+// =============================================================================
+.logo {
+	display: inline-block;
+	text-indent: -9999;
+
+	&.logo_domin {
+		background: url(../images/logo-header.png) 0 0 no-repeat;
+		@include size(286px, 83px);
+	}
+}
