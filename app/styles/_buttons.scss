@@ -10,8 +10,8 @@ button {
 // http://sarasoueidan.com/blog/navicon-transformicons
 // =============================================================================
 .lines-button {
-  //padding: $button-size/2 $button-size/4;
-  margin: 32px 0;
+  padding: $button-size/2 $button-size/4;
+  //margin: 32px 0;
   transition: .3s;
   cursor: pointer;
   user-select: none;

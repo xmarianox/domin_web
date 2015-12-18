@@ -9,6 +9,7 @@
 @import "buttons";
 @import "logos";
 
+
 body {
   background: #fafafa;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -19,4 +20,49 @@ body {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+// =============================================================================
+// Header
+// =============================================================================
+header {
+  @include size(100%, auto);
+  position: fixed;
+  z-index: 30;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px;
+
+  .lines-button {
+    position: absolute;
+    right: 28px;
+    top: 0;
+  }
+}
+.content {
+  @include size(100%, auto);
+  position: relative;
+}
+.lang-selector {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 90px;
+
+  li {
+    display: inline-block;
+  }
+}
+.menu {
+  display: none;
+
+  &.open {
+    display: block;
+  }
 }

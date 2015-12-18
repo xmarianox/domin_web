@@ -11,6 +11,8 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" type="text/css" href="/bower_components/vegas/dist/vegas.min.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/animate.css/animate.min.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -27,25 +29,31 @@
 
     <main>
       <header>
-        <a class="logo logo_domin" title="GUILLERMO DOMIN S.R.L"></a>
-        <button class="lines-button x" type="button" role="button" aria-label="Toggle Navigation">
-          <span class="lines"></span>
-        </button>
-        <ul class="menu">
-          <li><a href="#quienesSomosView" title="QUIENES SOMOS">QUIENES SOMOS</a></li>
-          <li><a href="#certificacionesView" title="CERTIFICACIONES">CERTIFICACIONES</a></li>
-          <li><a href="#terrestreView" title="TERRESTRE">TERRESTRE</a></li>
-          <li><a href="#maritimoView" title="MARÍTIMO">MARÍTIMO</a></li>
-          <li><a href="#contactoView" title="CONTACTO">CONTACTO</a></li>
-        </ul>
+        <div class="content">
+          <a class="logo logo_domin" title="GUILLERMO DOMIN S.R.L"></a>
+
+          <ul class="lang-selector">
+            <li><a href="javascript:;" title="ESPAÑOL" class="active">ESPAÑOL</a></li>
+            <li class="divider">|</li>
+            <li><a href="javascript:;" title="ENGLISH">ENGLISH</a></li>
+          </ul>
+
+          <button class="lines-button x" type="button" role="button" aria-label="Toggle Navigation">
+            <span class="lines"></span>
+          </button>
+
+          <ul class="menu">
+            <li><a href="#quienesSomosView" title="QUIENES SOMOS">QUIENES SOMOS</a></li>
+            <li><a href="#certificacionesView" title="CERTIFICACIONES">CERTIFICACIONES</a></li>
+            <li><a href="#terrestreView" title="TERRESTRE">TERRESTRE</a></li>
+            <li><a href="#maritimoView" title="MARÍTIMO">MARÍTIMO</a></li>
+            <li><a href="#contactoView" title="CONTACTO">CONTACTO</a></li>
+          </ul>
+        </div>
       </header>
 
       <article>
-        <section id="quienesSomosView">
-          {{ quienesSomosTemplate }}
-        </section>
-
-        <script id="quienesSomosTemplate" type="text/x-handlebars-template">
+        <section id="quienesSomosView" class="full-height">
           <h1>INSTALACIONES Y EXTINTORES CONTRA INCENDIO</h1>
           <p>Proyecto, montaje y mantenimiento de instalaciones especiales</p>
 
@@ -54,9 +62,9 @@
             <h3>QUIENES SOMOS</h3>
             <p>Nuestra Empresa ofrece servicios y provisión de equipos de protección, seguridad personal y de lucha contra incendio en embarcaciones y en tierra tanto a organizaciones civiles o empresas privadas como a las Fuerzas Militares y de Seguridad. Para ello contamos con una experiencia de más de 50 años en la actividad, teniendo también una amplitud de representaciones internacionales como así también el aval de las más importantes sociedades de clasificación. Además podemos ofrecerle al cliente un servicio dinámico y eficiente en los distintos puertos del país en los cuales poseemos representantes.</p>
           </div>
-        </script>
+        </section>
 
-        <section id="certificacionesView">
+        <section id="certificacionesView" class="full-height">
           <h1>{{ CERTIFICACIONES }}</h1>
 
           <ul>
@@ -77,7 +85,7 @@
           </ul>
         </section>
 
-        <section id="terrestreView">
+        <section id="terrestreView" class="full-height">
           <h1>{{ TERRESTRE }}</h1>
           <a href="" title="productos">productos</a>
           <a href="" title="servicios">servicios</a>
@@ -106,7 +114,7 @@
           </div>
         </section>
 
-        <section id="maritimoView">
+        <section id="maritimoView" class="full-height">
           <h1>MARITIMO</h1>
           <a href="" title="productos">productos</a>
           <a href="" title="servicios">servicios</a>
@@ -170,6 +178,8 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/handlebars/handlebars.min.js"></script>
+    <script src="/bower_components/vegas/dist/vegas.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
