@@ -4,8 +4,8 @@
 // imports
 @import "reset";
 @import "mixins";
-@import "fonts";
 @import "variables";
+@import "fonts";
 @import "buttons";
 @import "logos";
 
@@ -37,12 +37,17 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  padding: 20px;
-
+  //padding: 20px;
+  .logo {
+    left: 20px;
+    top: 20px;
+    position: absolute;
+  }
   .lines-button {
     position: absolute;
-    right: 28px;
-    top: 0;
+    right: 20px;
+    top: 20px;
+    z-index: 33;
   }
 }
 .content {
@@ -54,13 +59,41 @@ header {
   position: absolute;
   top: 20px;
   right: 90px;
+  z-index: 32;
 
   li {
     display: inline-block;
+    font-family: $tekoSemiBold;
+    @include line-height(62px);
+    @include font-size(24px);
+
+    a {
+      &.active {
+        color: $red;
+      }
+    }
   }
 }
 .menu {
+  @include size(214px, auto);
+  background-color: $black-70;
   display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 31;
+  padding: 80px 36px 30px;
+
+  li {
+      font-family: $tekoLight;
+      @include font-size(34px);
+      @include line-height(54px);
+      border-bottom: 1px solid $white;
+
+      &:last-child {
+        border-bottom: none;
+      }
+  }
 
   &.open {
     display: block;

@@ -3,14 +3,14 @@
 // colours
 $white: #ffffff;
 $black: #000000;
-$black-50: rgba(0,0,0,.5);
+$black-70: rgba(0,0,0,.7);
 $gray: #ebe9e9;
 $gray2: #dfdcdc;
 $blue: #013d93;
 $light-blue: #319fd8;
 $dark-blue: #021B41;
 $yellow: #ffff33;
-$red: #ed2d37;
+$red: #ed1b24;
 $brown: #aa3f40;
 
 // items menu color
@@ -21,7 +21,11 @@ $light-green: #BCB974;
 $dark-green: #9FBAA3;
 
 // fonts
-$futuraMD: 'futura_md_btmedium';
+$tekoLight: 'tekolight';
+$tekoRegular: 'teko_regularregular';
+$tekoMedium: 'tekomedium';
+$tekoSemiBold: 'tekosemibold';
+$tekoBold: 'tekobold';
 
 // grid variables
 $grid-columns: 12;
