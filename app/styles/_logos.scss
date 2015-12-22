@@ -9,4 +9,9 @@
 		background: url(../images/logo-header.png) 0 0 no-repeat;
 		@include size(286px, 83px);
 	}
+
+	&.logo_isologo {
+		background: url(../images/isologo.png) 0 0 no-repeat;
+		@include size(202px, 202px);
+	}
 }

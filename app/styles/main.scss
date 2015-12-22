@@ -72,6 +72,10 @@ header {
         color: $red;
       }
     }
+
+    &.divider {
+      color: $white;
+    }
   }
 }
 .menu {
@@ -98,4 +102,84 @@ header {
   &.open {
     display: block;
   }
+}
+
+// =============================================================================
+// quienesSomosView
+// =============================================================================
+#quienesSomosView {
+  text-align: center;
+  h1 {
+    @include font-size(66px);
+    @include line-height(76px);
+    font-family: $tekoSemiBold;
+    color: $white;
+  }
+  p {
+    @include font-size(26px);
+    @include line-height(46px);
+    font-family: Helvetica;
+    font-weight: bold;
+    color: $red;
+  }
+}
+// intro
+.intro-container {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+}
+// isologo
+.isologo-container {
+  vertical-align: middle;
+  text-align: center;
+  margin: 70px auto 0;
+  .logo {
+    vertical-align: middle;
+  }
+}
+.black-label {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $black;
+  border: 1px solid $white;
+  overflow: hidden;
+  padding: 12px 23px;
+  color: $white;
+  font-family: $tekoSemiBold;
+  @include font-size(33px);
+  @include line-height(26px);
+}
+
+// =============================================================================
+// certificacionesView
+// =============================================================================
+#certificacionesView {
+  background-color: #e1e1e1;
+  text-align: center;
+
+  h1 {
+    @include font-size(60px);
+    @include line-height(70px);
+    font-family: $tekoSemiBold;
+    color: #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+  }
+}
+
+// =============================================================================
+// terrestreView
+// =============================================================================
+#terrestreView {
+  background: url(../images/terrestre-portada.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+// =============================================================================
+// maritimoView
+// =============================================================================
+#maritimoView {
+  background: url(../images/maritimo-portada.jpg) center center no-repeat;
+  background-size: cover;
 }

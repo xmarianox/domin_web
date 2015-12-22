@@ -1,11 +1,10 @@
 /* jshint smarttabs:true */
-/* global $, aload, google */
+/* global $, aload */
 
 // Dinamic Height
 function calculateHeight(element) {
 	'use strict';
 	var windowHeight = $(window).height();
-//	var finalHeight = windowHeight - $('header').height();
 	$(element).height(windowHeight);
 }
 
@@ -39,13 +38,13 @@ $(document).ready(function() {
 		}
 	});
 
-
 	// vegasSlider
 	$('#quienesSomosView').vegas({
 		slides: [
 			{ src: 'images/img-slider-main-1.jpg' },
 			{ src: 'images/img-slider-main-2.jpg' }
-		]
+		],
+		timer: false
 	});
 
 	// menu

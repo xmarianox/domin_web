@@ -30,7 +30,7 @@
     <main>
       <header>
         <div class="content">
-          <a class="logo logo_domin" title="GUILLERMO DOMIN S.R.L"></a>
+          <a data-aload class="logo logo_domin" title="GUILLERMO DOMIN S.R.L"></a>
 
           <ul class="lang-selector">
             <li><a href="javascript:;" title="ESPAÑOL" class="active">ESPAÑOL</a></li>
@@ -54,19 +54,27 @@
 
       <article>
         <section id="quienesSomosView" class="full-height">
-          <h1>INSTALACIONES Y EXTINTORES CONTRA INCENDIO</h1>
-          <p>Proyecto, montaje y mantenimiento de instalaciones especiales</p>
 
-          <div>
-            <h2>GUILLERMO DOMIN S.R.L.</h2>
-            <h3>QUIENES SOMOS</h3>
-            <p>Nuestra Empresa ofrece servicios y provisión de equipos de protección, seguridad personal y de lucha contra incendio en embarcaciones y en tierra tanto a organizaciones civiles o empresas privadas como a las Fuerzas Militares y de Seguridad. Para ello contamos con una experiencia de más de 50 años en la actividad, teniendo también una amplitud de representaciones internacionales como así también el aval de las más importantes sociedades de clasificación. Además podemos ofrecerle al cliente un servicio dinámico y eficiente en los distintos puertos del país en los cuales poseemos representantes.</p>
+          <div class="isologo-container">
+            <span class="black-label">TERRESTRE</span>
+            <i data-aload class="logo logo_isologo"></i>
+            <span class="black-label">MARITIMO</span>
+          </div>
+
+          <div class="intro-container">
+            <h1>INSTALACIONES Y EXTINTORES CONTRA INCENDIO</h1>
+            <p>Proyecto, montaje y mantenimiento de instalaciones especiales</p>
           </div>
         </section>
 
-        <section id="certificacionesView" class="full-height">
-          <h1>{{ CERTIFICACIONES }}</h1>
+        <section data-aload class="detail" id="quienesSomosDetail">
+          <h2>GUILLERMO DOMIN S.R.L.</h2>
+          <h3>QUIENES SOMOS</h3>
+          <p>Nuestra Empresa ofrece servicios y provisión de equipos de protección, seguridad personal y de lucha contra incendio en embarcaciones y en tierra tanto a organizaciones civiles o empresas privadas como a las Fuerzas Militares y de Seguridad. Para ello contamos con una experiencia de más de 50 años en la actividad, teniendo también una amplitud de representaciones internacionales como así también el aval de las más importantes sociedades de clasificación. Además podemos ofrecerle al cliente un servicio dinámico y eficiente en los distintos puertos del país en los cuales poseemos representantes.</p>
+        </section><!-- quienesSomosDetail -->
 
+        <section id="certificacionesView">
+          <h1>{{ CERTIFICACIONES }}</h1>
           <ul>
             <li>https://www.fujikura-lifesaving.jp/en/ship/list.html</li>
             <li>http://survitecgroup.com/brands/dsb</li>
@@ -85,36 +93,35 @@
           </ul>
         </section>
 
-        <section id="terrestreView" class="full-height">
+        <section data-aload id="terrestreView" class="full-height">
           <h1>{{ TERRESTRE }}</h1>
           <a href="" title="productos">productos</a>
           <a href="" title="servicios">servicios</a>
+        </section>
+        <section class="detail" id="terrestreDetail">
+          <figure>
+            <img src="" alt="">
+            <figcaption>
+              <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
+            </figcaption>
+          </figure><!-- Item 1 -->
 
-          <div>
-            <figure>
-              <img src="" alt="">
-              <figcaption>
-                <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
-              </figcaption>
-            </figure><!-- Item 1 -->
+          <figure>
+            <img src="" alt="">
+            <figcaption>
+              <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
+            </figcaption>
+          </figure><!-- Item 2 -->
 
-            <figure>
-              <img src="" alt="">
-              <figcaption>
-                <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
-              </figcaption>
-            </figure><!-- Item 2 -->
-
-            <figure>
-              <img src="" alt="">
-              <figcaption>
-                <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
-              </figcaption>
-            </figure><!-- Item 3 -->
-          </div>
+          <figure>
+            <img src="" alt="">
+            <figcaption>
+              <p>SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.</p>
+            </figcaption>
+          </figure><!-- Item 3 -->
         </section>
 
-        <section id="maritimoView" class="full-height">
+        <section data-aload id="maritimoView" class="full-height">
           <h1>MARITIMO</h1>
           <a href="" title="productos">productos</a>
           <a href="" title="servicios">servicios</a>
@@ -122,6 +129,8 @@
 
         <section id="contactoView">
           <h1>contacto</h1>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1535.8892948660227!2d-58.53274863774862!3d-34.5357736707444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0b5f94c99bf%3A0x5a31f47808bd6777!2sJos%C3%A9+Eusebio+Colombres+2379%2C+B1606DEC+Munro%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1450754337595" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
           ubicación
           Jose E. Colombres 2379, Munro (1605)
@@ -135,21 +144,16 @@
           +54 11 4756-1414
           (Líneas Rotativas)
 
-
           <form>
-
             <div class="form-control">
               <input type="text" id="name" name="name" placeHolder="{{ nameUSer }}">
             </div>
-
             <div class="form-control">
               <input type="email" id="email" name="email" placeHolder="{{ e-mail }}">
             </div>
-
             <div class="form-control">
               <textarea id="message" name="message" placeHolder="{{ message }}"></textarea>
             </div>
-
             <div class="form-control">
               <button>{{ submit }}</button>
             </div>
@@ -158,6 +162,10 @@
         </section>
 
       </article>
+
+      <footer>
+        © Guillermo Domin S.R.L. | Jose E. Colombres 2379, Munro (1605)
+      </footer>
     </main>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
