@@ -42,6 +42,40 @@ main, article {
   @include size(100%, 100%);
   overflow: hidden;
 }
+
+
+//
+.row {
+  @include size(100%, auto);
+  max-width: $grid-max-width;
+  margin: 0 auto;
+
+  &:after {
+    @extend %clearfix;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media #{$breakpoint-medium} {
+  .row {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+
+  // loop para generar las class col-
+  @for $i from 1 through $grid-columns {
+    .col-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+
+}
+
 // =============================================================================
 // Header
 // =============================================================================
@@ -211,11 +245,15 @@ header {
   text-align: center;
 
   h1 {
+    @include size(90%, auto);
     @include font-size(60px);
-    @include line-height(70px);
+    @include line-height(46px);
     font-family: $tekoSemiBold;
-    color: #9f9f9f;
-    border-bottom: 1px solid #9f9f9f;
+    color: $gray2;
+    border-bottom: 1px solid $gray2;
+    padding: 38px 0 30px;
+    overflow: hidden;
+    margin: 0 auto 30px;
   }
 }
 
@@ -234,6 +272,85 @@ header {
   background: url(../images/maritimo-portada.jpg) center center no-repeat;
   background-size: cover;
 }
+
+// =============================================================================
+// contactoView
+// =============================================================================
+#contactoView {
+  text-align: center;
+  padding-bottom: 50px;
+
+  .col-4 {
+    .col-12 {
+      margin-bottom: 20px;
+    }
+  }
+
+  h1 {
+    @include font-size(60px);
+    @include line-height(46px);
+    font-family: $tekoSemiBold;
+    color: $gray2;
+    padding: 38px 0 30px;
+  }
+
+  h2 {
+    font-family: $tekoBold;
+    @include font-size(30px);
+    @include line-height(35px);
+    color: $blue;
+  }
+
+  .fa {
+    @include font-size(30px);
+    @include line-height(35px);
+    color: $dark-red;
+  }
+
+  p {
+    @include font-size(18px);
+    @include line-height(22px);
+    font-weight: bold;
+    color: $dark-gray;
+  }
+
+  a {
+    @include font-size(18px);
+    @include line-height(22px);
+    font-weight: bold;
+    color: $dark-red;
+    display: block;
+  }
+}
+
+iframe {
+  @include size(100%, 100%);
+  min-height: 450px;
+  display: block;
+}
+
+// forms
+.form-control {
+  @include size(100%, auto);
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+
+input, textarea {
+  @include size(100%, auto);
+  background-color: $gray;
+  border: 1px solid $gray;
+  display: block;
+  color: black;
+  padding: 14px;
+  // font
+  @include font-size(14px);
+}
+
+textarea {
+  @include size(100%, 200px);
+}
+
 
 // =============================================================================
 // footer

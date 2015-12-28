@@ -13,6 +13,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" type="text/css" href="/bower_components/vegas/dist/vegas.min.css">
     <link rel="stylesheet" type="text/css" href="/bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -74,7 +75,7 @@
         </section><!-- quienesSomosDetail -->
 
         <section id="certificacionesView">
-          <h1>{{ CERTIFICACIONES }}</h1>
+          <h1>CERTIFICACIONES</h1>
           <ul>
             <li>https://www.fujikura-lifesaving.jp/en/ship/list.html</li>
             <li>http://survitecgroup.com/brands/dsb</li>
@@ -128,38 +129,56 @@
         </section>
 
         <section id="contactoView">
-          <h1>contacto</h1>
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1535.8892948660227!2d-58.53274863774862!3d-34.5357736707444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0b5f94c99bf%3A0x5a31f47808bd6777!2sJos%C3%A9+Eusebio+Colombres+2379%2C+B1606DEC+Munro%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1450754337595" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-          ubicación
-          Jose E. Colombres 2379, Munro (1605)
-          Buenos Aires – Argentina
-
-          online
-          <a href="http://www.gdominsrl.com.ar" title="www.gdominsrl.com.ar">www.gdominsrl.com.ar</a>
-          <a href="mailto:info@gdominsrl.com.ar" title="info@gdominsrl.com.ar">info@gdominsrl.com.ar</a>
-
-          teléfonos
-          +54 11 4756-1414
-          (Líneas Rotativas)
-
-          <form>
-            <div class="form-control">
-              <input type="text" id="name" name="name" placeHolder="{{ nameUSer }}">
+          <div class="row">
+            <div class="col-12">
+              <h1>CONTACTO</h1>
             </div>
-            <div class="form-control">
-              <input type="email" id="email" name="email" placeHolder="{{ e-mail }}">
-            </div>
-            <div class="form-control">
-              <textarea id="message" name="message" placeHolder="{{ message }}"></textarea>
-            </div>
-            <div class="form-control">
-              <button>{{ submit }}</button>
-            </div>
-          </form>
 
-        </section>
+            <div class="col-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1535.8892948660227!2d-58.53274863774862!3d-34.5357736707444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0b5f94c99bf%3A0x5a31f47808bd6777!2sJos%C3%A9+Eusebio+Colombres+2379%2C+B1606DEC+Munro%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1450754337595" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><!-- mapa -->
+
+            <div class="col-4">
+              <div class="col-12">
+                <i class="fa fa-map-marker"></i>
+                <h2>UBICACIÓN</h2>
+                <p>Jose E. Colombres 2379, Munro (1605)</p>
+                <p>Buenos Aires – Argentina</p>
+              </div><!-- UBICACIÓN -->
+
+              <div class="col-12">
+                <i class="fa fa-internet-explorer"></i>
+                <h2>ONLINE</h2>
+                <a href="http://www.gdominsrl.com.ar" title="www.gdominsrl.com.ar">www.gdominsrl.com.ar</a>
+                <a href="mailto:info@gdominsrl.com.ar" title="info@gdominsrl.com.ar">info@gdominsrl.com.ar</a>
+              </div><!-- ONLINE -->
+
+              <div class="col-12">
+                <i class="fa fa-phone"></i>
+                <h2>TELÉFONOS</h2>
+                <p>+54 11 4756-1414</p>
+                <p>(Líneas Rotativas)</p>
+              </div><!-- TELÉFONOS -->
+            </div><!-- medios -->
+
+            <div class="col-4">
+              <form>
+                <div class="form-control">
+                  <input type="text" id="name" name="name" placeHolder="{{ nameUSer }}">
+                </div>
+                <div class="form-control">
+                  <input type="email" id="email" name="email" placeHolder="{{ e-mail }}">
+                </div>
+                <div class="form-control">
+                  <textarea id="message" name="message" placeHolder="{{ message }}"></textarea>
+                </div>
+                <div class="form-control">
+                  <button class="btn btn-default">{{ submit }}</button>
+                </div>
+              </form>
+            </div><!-- formulario -->
+          </div><!-- .row -->
+        </section><!-- #contactoView -->
 
       </article>
 

@@ -6,6 +6,22 @@ button {
   background: transparent;
 }
 
+.btn {
+  font-weight: bold;
+  @include font-size(18px);
+  display: block;
+
+  &.btn-default {
+    color: $white;
+    background-color: $light-blue;
+    padding: 14px 30px;
+
+    &:hover {
+      background-color: darken($light-blue, 15%);
+    }
+  }
+}
+
 // =============================================================================
 // http://sarasoueidan.com/blog/navicon-transformicons
 // =============================================================================
