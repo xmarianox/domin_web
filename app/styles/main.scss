@@ -128,7 +128,7 @@ header {
   }
 }
 .menu {
-  @include size(214px, auto);
+  @include size(288px, auto);
   background-color: $black-70;
   display: none;
   position: absolute;
@@ -254,6 +254,18 @@ header {
     padding: 38px 0 30px;
     overflow: hidden;
     margin: 0 auto 30px;
+  }
+
+  ul {
+    @include size(100%, auto);
+    overflow: hidden;
+    padding-bottom: 40px;
+
+    li {
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0 15px;
+    }
   }
 }
 
