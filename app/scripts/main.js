@@ -55,7 +55,7 @@ $(document).ready(function() {
 	});
 	// menu item click
 	$('.menu li a').click(function() {
-		$('.lines-button').removeClass('open');
+		$('.lines-button').removeClass('close');
 		$('.menu').toggleClass('open animated fadeIn');
 	});
 
