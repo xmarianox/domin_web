@@ -1,26 +1,15 @@
 /* jshint smarttabs:true */
 /* global $, aload */
 
-// Dinamic Height
-function calculateHeight(element) {
-	'use strict';
-	var windowHeight = $(window).height();
-	$(element).height(windowHeight);
-}
-
 // Load event
 $(window).load(function() {
 	'use strict';
 	aload();
-	calculateHeight('.full-height');
 });
 
 // Document ready
 $(document).ready(function() {
 	'use strict';
-	// resize
-	$(window).resize(function() { calculateHeight('.full-height'); });
-
 	// anchor navigation
 	$('a[href*=#]:not([href=#], .btn_plus)').click(function() {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
@@ -57,6 +46,14 @@ $(document).ready(function() {
 	$('.menu li a').click(function() {
 		$('.lines-button').removeClass('close');
 		$('.menu').toggleClass('open animated fadeIn');
+	});
+
+	// open detailView
+	$('#openDetailQuienesSomos').click(function(event) {
+		event.preventDefault();
+		var target = $(this).attr('href');
+		$(target).toggleClass('open animated slideInUp');
+		$('html, body').animate({ scrollTop: $(window).height() }, 1000);
 	});
 
 });

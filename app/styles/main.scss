@@ -39,10 +39,9 @@ main, article {
 }
 // generics
 .full-height {
-  @include size(100%, 100%);
+  @include size(100%, 100vh);
   overflow: hidden;
 }
-
 
 //
 .row {
@@ -66,14 +65,12 @@ main, article {
     width: 95%;
     max-width: $grid-max-width;
   }
-
   // loop para generar las class col-
   @for $i from 1 through $grid-columns {
     .col-#{$i} {
       width: 100% / $grid-columns * $i;
     }
   }
-
 }
 
 // =============================================================================
@@ -177,7 +174,22 @@ header {
   bottom: 80px;
   left: 0;
   right: 0;
+
+  .ic_mouse {
+    position: absolute;
+    right: 35px;
+    bottom: 28px;
+  }
 }
+
+#openDetailQuienesSomos {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 // isologo
 .isologo-container {
   vertical-align: middle;
@@ -205,13 +217,18 @@ header {
   @include size(100%, auto);
   min-height: 400px;
   overflow: hidden;
+  display: none;
 }
 
 #quienesSomosDetail {
-  background: url(../images/quienes-fondo.jpg) center center no-repeat;
+  background: $dark-red url(../images/quienes-fondo.jpg) center center no-repeat;
   background-size: cover;
   color: $white;
   padding: 30px;
+
+  &.open {
+    display: block;
+  }
 
   h2 {
     @include font-size(22px);

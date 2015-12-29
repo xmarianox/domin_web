@@ -2,12 +2,12 @@
 
 Tambien te adjunto los bocetos que hice hace un tiempo solo para que recuerdes el funcionamiento. Es asi:
 
-* SLIDER con 2 fotos que pasan
-* QUIENES se despliega clickeando un "+", metelo debajo de la frase.
-* CERTIFICACIONES va fijo (te corte todos los logos juntos, estos tienen c/u un link)
-* TERRESTRE con 2 botones que despliegan o productos (son 6 categorias) o servicios (son 3 categorias). cada categoria tiene una o mas fotos que se pasan con las flechitas.
-* MARITIMO con 2 botones que despliegan o productos (son 7 categorias, hay que agregar una flecha a la derecha para que se vea el 7mo) o servicios (son 4 categorias). cada categoria tiene una o mas fotos que se pasan con las flechitas.
-* CONTACTO con mapa, info y form.
+- [x] SLIDER con 2 fotos que pasan
+- [] QUIENES se despliega clickeando un "+", metelo debajo de la frase.
+- [] CERTIFICACIONES va fijo (te corte todos los logos juntos, estos tienen c/u un link)
+- [] TERRESTRE con 2 botones que despliegan o productos (son 6 categorias) o servicios (son 3 categorias). cada categoria tiene una o mas fotos que se pasan con las flechitas.
+- [] MARITIMO con 2 botones que despliegan o productos (son 7 categorias, hay que agregar una flecha a la derecha para que se vea el 7mo) o servicios (son 4 categorias). cada categoria tiene una o mas fotos que se pasan con las flechitas.
+- [x] CONTACTO con mapa, info y form.
 
 Abajo te pego texto en español e ingles, uno sobre el otro:
 

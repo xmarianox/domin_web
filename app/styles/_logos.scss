@@ -18,3 +18,18 @@
 		@include size(202px, 202px);
 	}
 }
+
+.ic {
+	display: inline-block;
+	text-indent: -9999;
+
+	&.ic_mouse {
+		background: url(../images/img-scroll.png) 0 0 no-repeat;
+		@include size(46px, 92px);
+	}
+
+	&.ic_detail {
+		background: url(../images/btn-open-detail.png) 0 0 no-repeat;
+		@include size(139px, 41px);
+	}
+}
