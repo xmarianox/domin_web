@@ -17,6 +17,10 @@
 		background: url(../images/isologo.png) 0 0 no-repeat;
 		@include size(202px, 202px);
 	}
+	&.logo_isologo_white {
+		background: url(../images/isologo-blanco.png) 0 0 no-repeat;
+		@include size(202px, 202px);
+	}
 }
 
 .ic {

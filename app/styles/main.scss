@@ -153,12 +153,14 @@ header {
 // quienesSomosView
 // =============================================================================
 #quienesSomosView {
+  background: $black;
   text-align: center;
   h1 {
     @include font-size(66px);
     @include line-height(76px);
     font-family: $tekoSemiBold;
     color: $white;
+    text-shadow: 1px 0px 24px $black-70;
   }
   p {
     @include font-size(26px);
@@ -290,15 +292,30 @@ header {
 // terrestreView
 // =============================================================================
 #terrestreView {
-  background: url(../images/terrestre-portada.jpg) center center no-repeat;
+  background: $black url(../images/terrestre-portada.jpg) center center no-repeat;
   background-size: cover;
+}
+
+// generic
+#terrestreView, #maritimoView  {
+  .isologo-container {
+    margin: 12% auto 0;
+
+    h1 {
+      @include font-size(100px);
+      @include line-height(110px);
+      font-family: $tekoBold;
+      color: $white;
+      text-shadow: 1px 0px 40px $black;
+    }
+  }
 }
 
 // =============================================================================
 // maritimoView
 // =============================================================================
 #maritimoView {
-  background: url(../images/maritimo-portada.jpg) center center no-repeat;
+  background: $black url(../images/maritimo-portada.jpg) center center no-repeat;
   background-size: cover;
 }
 

@@ -20,6 +20,23 @@ button {
       background-color: darken($light-blue, 15%);
     }
   }
+
+  &.btn-black {
+    display: inline-block;
+    border: 1px solid $white;
+    background-color: $black;
+    margin: 0 15px;
+    padding: 0 30px;
+    // font
+    font-weight: normal;
+    font-family: $tekoSemiBold;
+    @include font-size(35px);
+    @include line-height(55px);
+
+    &:hover {
+      background-color: lighten($black, 10%);
+    }
+  }
 }
 
 // =============================================================================
