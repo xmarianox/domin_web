@@ -3,8 +3,8 @@
 Tambien te adjunto los bocetos que hice hace un tiempo solo para que recuerdes el funcionamiento. Es asi:
 
 - [x] SLIDER con 2 fotos que pasan
-- [] QUIENES se despliega clickeando un "+", metelo debajo de la frase.
-- [] CERTIFICACIONES va fijo (te corte todos los logos juntos, estos tienen c/u un link)
+- [X] QUIENES se despliega clickeando un "+", metelo debajo de la frase.
+- [x] CERTIFICACIONES va fijo (te corte todos los logos juntos, estos tienen c/u un link)
 - [] TERRESTRE con 2 botones que despliegan o productos (son 6 categorias) o servicios (son 3 categorias). cada categoria tiene una o mas fotos que se pasan con las flechitas.
 - [] MARITIMO con 2 botones que despliegan o productos (son 7 categorias, hay que agregar una flecha a la derecha para que se vea el 7mo) o servicios (son 4 categorias). cada categoria tiene una o mas fotos que se pasan con las flechitas.
 - [x] CONTACTO con mapa, info y form.
@@ -32,13 +32,14 @@ Our Company offers service, maintenance and provision of safety and fire fightin
 * http://www.prefecturanaval.gov.ar/web/es/html/portada.php
 * http://www.rina.org/en
 
-
 ## TERRESTRE
 * Productos - TERRESTRE
 
 EXTINTORES: FOTOS: 47  (FIRE EXTINGUISHERS)
 EXTINTORES DE TODO TIPO Y CAPACIDAD: CO2, POLVO,
+
 ESPUMAS, AGUA, HALON, ACETATO DE POTASIO, ETC. PORTATILES Y RODANTES
+
 ALL TYPES AND CAPACITY OF FIRE EXTINGUISHERS: CO2, DRY POWDER, FOAM, WATER, FOR KITCHEN, ETC. PORTABLE AND WHEELED. 
 
 PROTECCION PERSONAL: FOTOS: 33 & 36 (PERSONAL PROTECTION EQUIPMENT)
@@ -64,18 +65,28 @@ ADVICE, PROJECTS PROVISION, ASSEMBLY AND PROVISION OF MATERIALS FOR FIXED FIRE E
 
 * Servicios
 
-EXTINTORES: FOTO 47 – FIRE EXTINGUISHERS
-SERVICIO DE CONTROL,  MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II.  INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y  EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.
+## EXTINTORES
+FIRE EXTINGUISHERS
+
+SERVICIO DE CONTROL, MANTENIMIENTO Y RECARGA DE EXTINTORES SEGÚN NORMAS IRAM 3517/II. INSCRIPTOS EN EL ORGANISMO PROVINCIAL DE DESARROLLO SUSTENTABLE (OPDS, GOBIERNO DE LA PROVINCIA DE BUENOS AIRES) Y EN EL REGISTRO DE RECARGADORES DEL GOBIERNO DE LA CIUDAD DE BUENOS AIRES.
+
 SERVICE OF CONTROL, MANTEINANCE AND REFILL OF FIRE EXTINGUISHERS ACCORDING TO IRAM 3517/II REGULATIONS. REGISTERED IN OPDS (BUENOS AIRES PROVINCE) AND GCBA (BUENOS AIRES CITY).
 
-INSTALACIONES FIJAS: FOTO (LA QUE ESTA EN EL EJEMPLO) – FIXED SYSTEMS
+## INSTALACIONES FIJAS
+FIXED SYSTEMS
+
 Inspección, mantenimiento y reparación de instalaciones fijas contra incendio, comprendiendo el mantenimiento integral de todos los elementos componentes. 
+
 INSPECTION, MANTEINANCE AND REPAIR OF FIXED FIRE EXTINGUISHING SYSTEMS. 
 
-DISPOSICION 415: FOTO (LA QUE ESTÁ EN EL EJEMPLO) DISPOSITION 415 
+
+## DISPOSICION 415
+DISPOSITION 415 
+
 Empresa habilitada por el G.C.B.A. para fabricación, INSTALACION, mantenimiento Y REPARACION de Instalaciones Fijas contra Incendio.
 DISPOSICION 415 y 5295  (gobierno de la ciudad de buenos aires)
 disposicion 639 y resolucion 643 (agencia gubernamental de control)
+
 authorized by g.c.b.a for the manufacture, installation, manteinance and repair of fixed fire extinguishing systems.
 disposition 415 & 5295 (city of buenos aires government)
 disposition 639 & resolution 643 (gubernamental agency of control)
