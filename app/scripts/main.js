@@ -52,4 +52,11 @@ $(document).ready(function() {
 		$('html, body').animate({ scrollTop: $(window).height() }, 1000);
 	});
 
+	// items slider
+	$('.item-carousel ul').slick({
+		arrows: true,
+		infinite: false,
+		mobileFirst: true
+	});
+
 });

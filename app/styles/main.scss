@@ -1,4 +1,8 @@
 // bower:scss
+$slick-font-path: "../fonts/" !default;
+$slick-loader-path: "../images/" !default;
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
 // endbower
 
 // imports
@@ -371,6 +375,65 @@ header {
   }
 }
 
+.product-item {
+  @include size(100%, auto);
+  overflow: hidden;
+
+  .item-header {
+    @include size(100%, auto);
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+  }
+
+  img {
+    @include size(100%, auto);
+    display: block;
+  }
+
+  h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    @include font-size(21px);
+    @include line-height(38px);
+    font-family: $tekoSemiBold;
+  }
+
+  .slick-slider {
+    padding: 0;
+    margin: 0;
+  }
+
+  .slick-prev, .slick-next {
+    z-index: 30;
+    &:before {
+      color: #480a0d !important;
+    }
+  }
+  .slick-next {
+    right: 8px;
+  }
+  .slick-prev {
+    left: 8px;
+  }
+
+  .product-description {
+    @include size(100%, auto);
+    min-height: 240px;
+    background-color: #480a0d;
+    padding: 30px 15px;
+    text-align: center;
+
+    p {
+      @include font-size(11px);
+      @include line-height(16px);
+    }
+
+  }
+}
 
 // =============================================================================
 // maritimoView
