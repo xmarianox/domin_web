@@ -43,6 +43,7 @@ Thumbs.db
 
 ### Node #
 #########
+/gulpfile.babel.js
 /node_modules
 /dist
 /.tmp
