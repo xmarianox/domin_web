@@ -57,7 +57,7 @@ $(document).ready(function() {
 		var target = $(this).attr('data-target');
 		$(target).toggleClass('open animated slideInUp');
 
-		if (target === "#terrestreDetailProduct") {
+		if (target === '#terrestreDetailProduct') {
 			$('.terrestreSlider').slick({
 				arrows: true,
 				infinite: false,
@@ -71,7 +71,7 @@ $(document).ready(function() {
 		var target = $(this).attr('data-target');
 		$(target).toggleClass('open animated slideInUp');
 
-		if (target === "#maritimoDetailServicio") {
+		if (target === '#maritimoDetailServicio') {
 			$('.maritimoSlider').slick({
 				arrows: true,
 				infinite: false,
