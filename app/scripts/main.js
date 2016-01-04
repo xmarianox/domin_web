@@ -54,8 +54,9 @@ $(document).ready(function() {
 
 	$('#terrestreView a').click(function(event) {
 		event.preventDefault();
+		$('.detail').removeClass('open');
 		var target = $(this).attr('data-target');
-		$(target).toggleClass('open animated slideInUp');
+		$(target).addClass('open animated slideInUp');
 
 		if (target === '#terrestreDetailProduct') {
 			$('.terrestreSlider').slick({
@@ -68,8 +69,9 @@ $(document).ready(function() {
 
 	$('#maritimoView a').click(function(event) {
 		event.preventDefault();
+		$('.detail').removeClass('open');
 		var target = $(this).attr('data-target');
-		$(target).toggleClass('open animated slideInUp');
+		$(target).addClass('open animated slideInUp');
 
 		if (target === '#maritimoDetailServicio') {
 			$('.maritimoSlider').slick({
@@ -82,6 +84,7 @@ $(document).ready(function() {
 				arrows: true,
 				infinite: false,
 				mobileFirst: true,
+				adaptiveHeight: true,
 				slidesToShow: 6
 			});
 

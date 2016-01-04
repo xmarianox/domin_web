@@ -471,6 +471,17 @@ header {
       @include font-size(17px);
     }
   }
+
+/*   .row.slick-initialized.slick-slider {
+    .slick-prev, .slick-next {
+      @include size(58px, 98px);
+      &:before {
+        content: "";
+        background: url(../images/controls.png) 0 0 no-repeat;
+        @include size(58px, 98px);
+      }
+    }
+  } */
 }
 
 // =============================================================================
