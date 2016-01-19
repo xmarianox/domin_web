@@ -23,7 +23,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.overlay a').click(function(event) {
+	$('.overlay a').click(function() {
 		$('body').removeClass('hidden');
 		$('.overlay').fadeToggle();
 	});
