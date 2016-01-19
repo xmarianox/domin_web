@@ -26,6 +26,10 @@ body {
   background: #fafafa;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 .browserupgrade {
   margin: 0.2em 0;
@@ -82,6 +86,46 @@ main, article {
     }
   }
 }
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom:0;
+  @include size(100%, 100%);
+  overflow: hidden;
+  z-index: 200;
+  background-color: $black-80;
+
+  section {
+    background: $black;
+    @include size(50%, auto);
+    padding: 30px;
+    margin: 20% auto;
+    font-family: $tekoSemiBold;
+
+    a {
+      display: block;
+      text-align: center;
+    }
+
+    h1 {
+      @include font-size(33px);
+      @include line-height(43px);
+    }
+    h2 {
+      @include font-size(23px);
+      @include line-height(33px);
+      margin: 15px 0;
+    }
+    h3 {
+      @include font-size(33px);
+      @include line-height(43px);
+    }
+  }
+}
+
 
 // =============================================================================
 // Header
@@ -184,7 +228,7 @@ header {
 
 #main-slider {
   img {
-    @include size(auto, 100vh);
+    @include size(100%, 100vh);
   }
 }
 
@@ -575,7 +619,6 @@ input, textarea {
 textarea {
   @include size(100%, 200px);
 }
-
 
 // =============================================================================
 // footer

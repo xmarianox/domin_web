@@ -23,14 +23,10 @@ $(document).ready(function() {
 		}
 	});
 
-	// vegasSlider
-	// $('#quienesSomosView').vegas({
-	// 	slides: [
-	// 		{ src: 'images/img-slider-main-1.jpg' },
-	// 		{ src: 'images/img-slider-main-2.jpg' }
-	// 	],
-	// 	timer: false
-	// });
+	$('.overlay a').click(function(event) {
+		$('body').removeClass('hidden');
+		$('.overlay').fadeToggle();
+	});
 
 	$('#main-slider').slick({
 		autoplay: true,

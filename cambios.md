@@ -27,4 +27,4 @@ Creo que el listado de cambios no es complicado, el punto 10 es el único que ha
 
 * [x] - 9. Contacto: Cambiar los cuadrados por iconos (mapa, internet y telefono)
 
-* [ ] - 10. Por otro lado, tenemos un producto nuevo que hay que dar a conocer al publico, en esa línea pensaba que se puede hacer que cuando abris la pagina te salte un cartel (estilo pagina de la afip http://www.afip.gob.ar/home/index.html) que lo podes cerrar o si cliqueas te lleve a un micrositio (un Word asi como está).
+* [x] - 10. Por otro lado, tenemos un producto nuevo que hay que dar a conocer al publico, en esa línea pensaba que se puede hacer que cuando abris la pagina te salte un cartel (estilo pagina de la afip http://www.afip.gob.ar/home/index.html) que lo podes cerrar o si cliqueas te lleve a un micrositio (un Word asi como está).
