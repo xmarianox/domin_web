@@ -24,12 +24,20 @@ $(document).ready(function() {
 	});
 
 	// vegasSlider
-	$('#quienesSomosView').vegas({
-		slides: [
-			{ src: 'images/img-slider-main-1.jpg' },
-			{ src: 'images/img-slider-main-2.jpg' }
-		],
-		timer: false
+	// $('#quienesSomosView').vegas({
+	// 	slides: [
+	// 		{ src: 'images/img-slider-main-1.jpg' },
+	// 		{ src: 'images/img-slider-main-2.jpg' }
+	// 	],
+	// 	timer: false
+	// });
+
+	$('#main-slider').slick({
+		autoplay: true,
+		fade: true,
+		arrows: false,
+		infinite: true,
+		mobileFirst: true
 	});
 
 	// menu

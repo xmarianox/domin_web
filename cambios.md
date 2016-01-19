@@ -4,7 +4,7 @@ A nivel general, la navegabilidad de web no es muy buena. Por ejemplo, se superp
 
 Creo que el listado de cambios no es complicado, el punto 10 es el único que habría que ver detalladamente a ver si se puede hacer o buscar una alternativa.
 
-* [ ] - 1. En el principal hay que hacer que cuando cambie la imagen cambie el texto (un texto para la foto del matafuego y un texto para la foto de las balsas)
+* [x] - 1. En el principal hay que hacer que cuando cambie la imagen cambie el texto (un texto para la foto del matafuego y un texto para la foto de las balsas)
 	a. El del matafuego está bien en español, en Ingles hay que cambiarlo a: FIRE EXTINGUISHERS AND FIXED SYSTEMS (Design, installation and maintenance of special projects)
 	b. En cuanto al texto de la balsa: EQUIPAMIENTO SALVAVIDAS (Venta, inspección y recertificación) En Ingles: LIFE-SAVING EQUIPMENT (Sales, inspections and recertification)
 
@@ -27,4 +27,4 @@ Creo que el listado de cambios no es complicado, el punto 10 es el único que ha
 
 * [x] - 9. Contacto: Cambiar los cuadrados por iconos (mapa, internet y telefono)
 
-* [ ] - 10. Por otro lado, tenemos un producto nuevo que hay que dar a conocer al publico, en esa línea pensaba que se puede hacer que cuando abris la pagina te salte un cartel (estilo pagina de la afiphttp://www.afip.gob.ar/home/index.html) que lo podes cerrar o si cliqueas te lleve a un micrositio (un Word asi como está).
+* [ ] - 10. Por otro lado, tenemos un producto nuevo que hay que dar a conocer al publico, en esa línea pensaba que se puede hacer que cuando abris la pagina te salte un cartel (estilo pagina de la afip http://www.afip.gob.ar/home/index.html) que lo podes cerrar o si cliqueas te lleve a un micrositio (un Word asi como está).
