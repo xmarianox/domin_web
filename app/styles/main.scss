@@ -259,6 +259,11 @@ header {
   img {
     @include size(100%, 100vh);
   }
+  @media #{$breakpoint-tablet-big} {
+    img {
+      @include size(100%, calc(100vh - 57px));
+    }
+  }
 }
 
 // intro
