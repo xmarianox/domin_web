@@ -63,6 +63,15 @@ $(document).ready(function() {
 		$(target).addClass('open animated slideInUp');
 
 		if (target === '#terrestreDetailProduct') {
+			if ($(window).innerWidth() <= 1024) {
+				$('#terrestreDetailProduct .row').slick({
+					arrows: true,
+					infinite: false,
+					mobileFirst: true,
+					adaptiveHeight: true,
+					slidesToShow: 4
+				});
+			}
 			$('.terrestreSlider').slick({
 				arrows: true,
 				infinite: false,
@@ -84,13 +93,23 @@ $(document).ready(function() {
 				mobileFirst: true
 			});
 		} else {
-			$('#maritimoDetailProducto .row').slick({
-				arrows: true,
-				infinite: false,
-				mobileFirst: true,
-				adaptiveHeight: true,
-				slidesToShow: 6
-			});
+			if ($(window).innerWidth() <= 1024) {
+				$('#maritimoDetailProducto .row').slick({
+					arrows: true,
+					infinite: false,
+					mobileFirst: true,
+					adaptiveHeight: true,
+					slidesToShow: 4
+				});
+			} else {
+				$('#maritimoDetailProducto .row').slick({
+					arrows: true,
+					infinite: false,
+					mobileFirst: true,
+					adaptiveHeight: true,
+					slidesToShow: 6
+				});
+			}
 
 			$('.maritimoProductoSlider').slick({
 				arrows: true,

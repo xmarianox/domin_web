@@ -42,6 +42,11 @@ $grid-max-width: 1280px;
 $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
 
+// Macbook Pro 13"
+$breakpoint-laptop-small: "only screen and (max-width: 80em)";
+// Ipad
+$breakpoint-tablet-big: "only screen and (max-width: 64em)";
+
 /* animate button */
 $button-size : 2.5rem;
 /* increase this to see the transformations in slow-motion */

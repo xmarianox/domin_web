@@ -37,6 +37,19 @@ button {
       background-color: lighten($black, 10%);
     }
   }
+
+  @media #{$breakpoint-laptop-small} {
+    &.btn-black {
+      @include font-size(30px);
+      @include line-height(50px);
+    }
+  }
+  @media #{$breakpoint-tablet-big} {
+    &.btn-black {
+      @include font-size(25px);
+      @include line-height(45px);
+    }
+  }
 }
 
 // =============================================================================

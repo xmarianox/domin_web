@@ -8,6 +8,11 @@
 	&.logo_domin {
 		background: url(../images/logo-header.png) 0 0 no-repeat;
 		@include size(286px, 83px);
+
+		@media #{$breakpoint-laptop-small} {
+			background-size: cover;
+			@include size(260px, 75px);
+		}
 	}
 	&.logo_domin_footer {
 		background: url(../images/logo-footer.png) 0 0 no-repeat;
@@ -16,10 +21,26 @@
 	&.logo_isologo {
 		background: url(../images/isologo.png) 0 0 no-repeat;
 		@include size(202px, 202px);
+
+		@media #{$breakpoint-laptop-small} {
+			background-size: cover;
+			@include size(180px, 180px);
+		}
+		@media #{$breakpoint-tablet-big} {
+			@include size(160px, 160px);
+		}
 	}
 	&.logo_isologo_white {
 		background: url(../images/isologo-blanco.png) 0 0 no-repeat;
 		@include size(202px, 202px);
+
+		@media #{$breakpoint-laptop-small} {
+			background-size: cover;
+			@include size(180px, 180px);
+		}
+		@media #{$breakpoint-tablet-big} {
+			@include size(160px, 160px);
+		}
 	}
 }
 
@@ -30,6 +51,11 @@
 	&.ic_mouse {
 		background: url(../images/img-scroll.png) 0 0 no-repeat;
 		@include size(46px, 92px);
+
+		@media #{$breakpoint-laptop-small} {
+			background-size: cover;
+			@include size(38px, 78px);
+		}
 	}
 
 	&.ic_detail {

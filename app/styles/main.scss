@@ -49,6 +49,9 @@ main, article {
 .full-height {
   @include size(100%, 100vh);
   overflow: hidden;
+  @media #{$breakpoint-tablet-big} {
+    @include size(100%, calc(100vh - 57px));
+  }
 }
 
 //
@@ -98,17 +101,17 @@ main, article {
   z-index: 200;
   background-color: $black-80;
 
+  a {
+    display: block;
+  }
+
   section {
     background: $black;
     @include size(50%, auto);
     padding: 30px;
     margin: 20% auto;
     font-family: $tekoSemiBold;
-
-    a {
-      display: block;
-      text-align: center;
-    }
+    text-align: center;
 
     h1 {
       @include font-size(33px);
@@ -122,6 +125,16 @@ main, article {
     h3 {
       @include font-size(33px);
       @include line-height(43px);
+    }
+
+    @media #{$breakpoint-laptop-small} {
+      margin: 15% auto;
+    }
+    @media #{$breakpoint-tablet-big} {
+      h2 {
+        @include font-size(20px);
+        @include line-height(30px);
+      }
     }
   }
 }
@@ -197,6 +210,11 @@ header {
       &:last-child {
         border-bottom: none;
       }
+
+      @media #{$breakpoint-laptop-small} {
+        @include font-size(30px);
+        @include line-height(48px);
+      }
   }
 
   &.open {
@@ -223,6 +241,17 @@ header {
     font-family: Helvetica;
     font-weight: bold;
     color: $red;
+  }
+
+  @media #{$breakpoint-laptop-small} {
+    h1 {
+      @include font-size(50px);
+      @include line-height(60px);
+    }
+    p {
+      @include font-size(22px);
+      @include line-height(32px);
+    }
   }
 }
 
@@ -279,6 +308,10 @@ header {
   font-family: $tekoSemiBold;
   @include font-size(33px);
   @include line-height(26px);
+
+  @media #{$breakpoint-laptop-small} {
+    @include font-size(30px);
+  }
 }
 
 // detail
@@ -351,6 +384,17 @@ header {
       display: inline-block;
       vertical-align: bottom;
       margin: 0 15px;
+
+      @media #{$breakpoint-tablet-big} {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  @media #{$breakpoint-laptop-small} {
+    h1 {
+      @include font-size(50px);
+      @include line-height(46px);
     }
   }
 }
@@ -375,6 +419,25 @@ header {
       font-family: $tekoBold;
       color: $white;
       text-shadow: 1px 0px 40px $black;
+    }
+  }
+
+  @media #{$breakpoint-laptop-small} {
+    .isologo-container {
+      margin: 0 auto;
+
+      h1 {
+        @include font-size(90px);
+        @include line-height(100px);
+      }
+    }
+  }
+  @media #{$breakpoint-tablet-big} {
+    .isologo-container {
+      h1 {
+        @include font-size(70px);
+        @include line-height(80px);
+      }
     }
   }
 }
@@ -412,6 +475,12 @@ header {
         @include line-height(38px);
         font-family: $tekoSemiBold;
       }
+
+      @media #{$breakpoint-laptop-small} {
+        p {
+          @include font-size(18px);
+        }
+      }
     }
 
     img {
@@ -428,6 +497,16 @@ header {
       p {
         @include font-size(16px);
         @include line-height(18px);
+      }
+
+      @media #{$breakpoint-laptop-small} {
+        p {
+          @include font-size(14px);
+        }
+      }
+
+      @media #{$breakpoint-tablet-big} {
+        padding: 20px;
       }
     }
   }
@@ -489,7 +568,19 @@ header {
       @include font-size(11px);
       @include line-height(16px);
     }
+  }
 
+  @media #{$breakpoint-laptop-small} {
+    h2 {
+      @include font-size(18px);
+    }
+  }
+
+  @media #{$breakpoint-tablet-big} {
+    h2 {
+      @include font-size(18px);
+      @include line-height(30px);
+    }
   }
 }
 
@@ -529,17 +620,6 @@ header {
       @include font-size(17px);
     }
   }
-
-/*   .row.slick-initialized.slick-slider {
-    .slick-prev, .slick-next {
-      @include size(58px, 98px);
-      &:before {
-        content: "";
-        background: url(../images/controls.png) 0 0 no-repeat;
-        @include size(58px, 98px);
-      }
-    }
-  } */
 }
 
 // =============================================================================
@@ -590,6 +670,13 @@ header {
     color: $dark-red;
     display: block;
   }
+
+  @media #{$breakpoint-laptop-small} {
+    h1 {
+      @include font-size(50px);
+      @include line-height(60px);
+    }
+  }
 }
 
 iframe {
@@ -612,6 +699,7 @@ input, textarea {
   display: block;
   color: black;
   padding: 14px;
+  @include border-radius(0px);
   // font
   @include font-size(14px);
 }
