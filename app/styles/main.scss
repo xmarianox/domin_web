@@ -52,6 +52,9 @@ main, article {
   @media #{$breakpoint-tablet-big} {
     @include size(100%, calc(100vh - 57px));
   }
+  @media #{$breakpoint-smartphone-big} {
+    @include size(100%, calc(100vh - 68px));
+  }
 }
 
 //
@@ -139,7 +142,20 @@ main, article {
   }
 }
 
-
+.hidden-mobile {
+  display: block;
+}
+.visible-mobile {
+  display: none;
+}
+@media #{$breakpoint-smartphone-big} {
+  .hidden-mobile {
+    display: none !important;
+  }
+  .visible-mobile {
+    display: block;
+  }
+}
 // =============================================================================
 // Header
 // =============================================================================
@@ -150,7 +166,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  //padding: 20px;
+
   .logo {
     left: 20px;
     top: 20px;
@@ -161,6 +177,18 @@ header {
     right: 20px;
     top: 20px;
     z-index: 33;
+  }
+  @media #{$breakpoint-smartphone-big} {
+    @include size(100%, 55px);
+    background-color: $black-50;
+    .logo {
+      left: 8px;
+      top: 8px;
+    }
+    .lines-button {
+      right: 6px;
+      top: -3px;
+    }
   }
 }
 .content {
@@ -189,6 +217,10 @@ header {
     &.divider {
       color: $white;
     }
+  }
+
+  @media #{$breakpoint-smartphone-big} {
+    display: none;
   }
 }
 .menu {
@@ -219,6 +251,12 @@ header {
 
   &.open {
     display: block;
+  }
+
+  @media #{$breakpoint-smartphone-big} {
+    @include size(100%, auto);
+    top: 55px;
+    padding: 16px;
   }
 }
 // =============================================================================
@@ -253,9 +291,15 @@ header {
       @include line-height(32px);
     }
   }
+  @media #{$breakpoint-smartphone-big} {
+    h1 {
+      @include font-size(35px);
+      @include line-height(38px);
+    }
+  }
 }
 
-#main-slider {
+#main-slider-desktop {
   img {
     @include size(100%, 100vh);
   }
@@ -263,6 +307,12 @@ header {
     img {
       @include size(100%, calc(100vh - 57px));
     }
+  }
+}
+
+#main-slider-mobile {
+  img {
+    @include size(auto, calc(100vh - 68px));
   }
 }
 
@@ -300,6 +350,11 @@ header {
   z-index: 10;
   .logo {
     vertical-align: middle;
+
+    @media #{$breakpoint-smartphone-big} {
+      display: block;
+      margin: 0 auto 16px;
+    }
   }
 }
 .black-label {
@@ -316,6 +371,10 @@ header {
 
   @media #{$breakpoint-laptop-small} {
     @include font-size(30px);
+  }
+
+  @media #{$breakpoint-smartphone-big} {
+    padding: 13px 23px 10px;
   }
 }
 
@@ -358,6 +417,14 @@ header {
     text-align: justify;
     @include font-size(16px);
     @include line-height(20px);
+  }
+
+  @media #{$breakpoint-smartphone-big} {
+    background: $dark-red;
+
+    p {
+      @include size(100%, auto);
+    }
   }
 }
 

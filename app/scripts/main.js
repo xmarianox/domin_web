@@ -1,6 +1,8 @@
 /* jshint smarttabs:true */
 /* global $, aload */
 
+var mobileFirst;
+
 // Load event
 $(window).load(function() {
 	'use strict';
@@ -10,6 +12,9 @@ $(window).load(function() {
 // Document ready
 $(document).ready(function() {
 	'use strict';
+
+	mobileFirst = SmartPhone.isAny();
+
 	// anchor navigation
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
@@ -23,18 +28,32 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.overlay a').click(function() {
+	if (mobileFirst) {
+		console.log("Mobile");
 		$('body').removeClass('hidden');
-		$('.overlay').fadeToggle();
-	});
+		$('.overlay').hide();
 
-	$('#main-slider').slick({
-		autoplay: true,
-		fade: true,
-		arrows: false,
-		infinite: true,
-		mobileFirst: true
-	});
+		$('#main-slider-mobile').slick({
+			autoplay: true,
+			fade: true,
+			arrows: false,
+			infinite: true,
+			mobileFirst: true
+		});
+	} else {
+		$('.overlay a').click(function() {
+			$('body').removeClass('hidden');
+			$('.overlay').fadeToggle();
+		});
+
+		$('#main-slider-desktop').slick({
+			autoplay: true,
+			fade: true,
+			arrows: false,
+			infinite: true,
+			mobileFirst: true
+		});
+	}
 
 	// menu
 	$('.lines-button').click(function(event) {

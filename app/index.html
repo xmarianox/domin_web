@@ -56,13 +56,19 @@
       <article>
         <section id="quienesSomosView" class="full-height">
 
-          <div class="isologo-container animated slideInDown">
+          <div class="isologo-container hidden-mobile animated slideInDown">
             <a href="#terrestreView" class="black-label" title="TERRESTRE">TERRESTRE</a>
             <i class="logo logo_isologo"></i>
             <a href="#maritimoView" class="black-label" title="MARITIMO">MARITIMO</a>
           </div>
 
-          <ul id="main-slider">
+          <div class="isologo-container visible-mobile animated slideInDown">
+            <i class="logo logo_isologo"></i>
+            <a href="#terrestreView" class="black-label" title="TERRESTRE">TERRESTRE</a>
+            <a href="#maritimoView" class="black-label" title="MARITIMO">MARITIMO</a>
+          </div>
+
+          <ul id="main-slider-desktop" class="hidden-mobile">
             <li>
               <img src="images/img-slider-main-1.jpg" height="1081" width="1920" alt="INSTALACIONES Y EXTINTORES CONTRA INCENDIO">
               <div class="intro-container">
@@ -78,6 +84,21 @@
                 <h1>EQUIPAMIENTO SALVAVIDAS</h1>
                 <p>Venta, inspección y recertificación</p>
                 <a href="#certificacionesView" class="ic ic_mouse animated infinite bounce"></a>
+              </div>
+            </li>
+          </ul>
+
+          <ul id="main-slider-mobile" class="visible-mobile">
+            <li>
+              <img src="images/img-slider-main-mobile-1.jpg" height="640" width="600" alt="INSTALACIONES Y EXTINTORES CONTRA INCENDIO">
+              <div class="intro-container">
+                <h1>INSTALACIONES Y EXTINTORES CONTRA INCENDIO</h1>
+              </div>
+            </li>
+            <li>
+              <img src="images/img-slider-main-mobile-2.jpg" height="640" width="600" alt="EQUIPAMIENTO SALVAVIDAS">
+              <div class="intro-container">
+                <h1>EQUIPAMIENTO SALVAVIDAS</h1>
               </div>
             </li>
           </ul>
@@ -592,6 +613,7 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="/bower_components/browser-detector/detect-browser.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
