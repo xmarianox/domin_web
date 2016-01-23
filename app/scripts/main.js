@@ -1,5 +1,5 @@
 /* jshint smarttabs:true */
-/* global $, aload */
+/* global $, aload, SmartPhone */
 
 var mobileFirst;
 
@@ -29,7 +29,6 @@ $(document).ready(function() {
 	});
 
 	if (mobileFirst) {
-		console.log("Mobile");
 		$('body').removeClass('hidden');
 		$('.overlay').hide();
 
