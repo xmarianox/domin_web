@@ -774,10 +774,26 @@ input, textarea {
   @include border-radius(0px);
   // font
   @include font-size(14px);
+
+  &.error {
+    border: 1px solid $error-form;
+    color: $error-form;
+  }
 }
 
 textarea {
   @include size(100%, 200px);
+}
+
+#success_message {
+  display: none;
+  padding-top: 30px;
+  p {
+    font-family: $tekoSemiBold;
+    text-align: center;
+    @include font-size(30px);
+    @include line-height(35px);
+  }
 }
 
 // =============================================================================
