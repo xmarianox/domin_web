@@ -88,6 +88,15 @@ $(document).ready(function() {
 			infinite: true,
 			mobileFirst: true
 		});
+
+		// open detailView
+		$('#openDetailQuienesSomosMobile').click(function(event) {
+			event.preventDefault();
+			var target = $(this).attr('href');
+			$(target).toggleClass('open animated slideInUp');
+			$('html, body').animate({ scrollTop: $(target).offset().top - 600 }, 1000);
+		});
+
 	} else {
 		$('.overlay a').click(function() {
 			$('body').removeClass('hidden');
@@ -101,6 +110,14 @@ $(document).ready(function() {
 			infinite: true,
 			mobileFirst: true
 		});
+
+		// open detailView
+		$('#openDetailQuienesSomos').click(function(event) {
+			event.preventDefault();
+			var target = $(this).attr('href');
+			$(target).toggleClass('open animated slideInUp');
+			$('html, body').animate({ scrollTop: $(window).offset().top }, 1000);
+		});
 	}
 
 	// menu
@@ -113,14 +130,6 @@ $(document).ready(function() {
 	$('.menu li a').click(function() {
 		$('.lines-button').removeClass('close');
 		$('.menu').toggleClass('open animated fadeIn');
-	});
-
-	// open detailView
-	$('#openDetailQuienesSomos').click(function(event) {
-		event.preventDefault();
-		var target = $(this).attr('href');
-		$(target).toggleClass('open animated slideInUp');
-		$('html, body').animate({ scrollTop: $(window).offset().top }, 1000);
 	});
 
 	$('#terrestreView a').click(function(event) {
