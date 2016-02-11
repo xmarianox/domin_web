@@ -115,6 +115,7 @@ main, article {
     margin: 20% auto;
     font-family: $tekoSemiBold;
     text-align: center;
+    position: relative;
 
     h1 {
       @include font-size(33px);
@@ -128,6 +129,13 @@ main, article {
     h3 {
       @include font-size(33px);
       @include line-height(43px);
+    }
+
+    .close_overlay {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      @include font-size(33px);
     }
 
     @media #{$breakpoint-laptop-small} {
