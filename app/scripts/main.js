@@ -103,13 +103,14 @@ $(document).ready(function() {
 			$('.detail').removeClass('open');
 			var target = $(this).attr('data-target');
 			$(target).addClass('open animated slideInUp');
-			$('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $(target).offset().top + 600 }, 1000);
 
 			if (target === '#terrestreDetailProduct') {
 				$('#terrestreDetailProduct .row').slick({
 					arrows: true,
 					infinite: false,
-					mobileFirst: false,
+					mobileFirst: true,
+					adaptiveHeight: true,
 					slidesToShow: 1
 				});
 

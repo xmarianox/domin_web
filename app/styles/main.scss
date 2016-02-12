@@ -600,6 +600,17 @@ header {
 
   @media #{$breakpoint-smartphone-big} {
     padding: 18px 0;
+
+    figure {
+      figcaption {
+        padding: 16px;
+
+        p {
+          @include font-size(16px);
+          @include line-height(20px);
+        }
+      }
+    }
   }
 }
 
@@ -707,7 +718,7 @@ header {
 
       p {
         @include font-size(16px);
-        @include line-height(22px);
+        @include line-height(20px);
       }
     }
   }
