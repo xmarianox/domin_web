@@ -109,15 +109,14 @@ $(document).ready(function() {
 				$('#terrestreDetailProduct .row').slick({
 					arrows: true,
 					infinite: false,
-					mobileFirst: true,
-					adaptiveHeight: false,
+					mobileFirst: false,
 					slidesToShow: 1
 				});
 
 				$('.terrestreSlider').slick({
 					arrows: true,
 					infinite: false,
-					mobileFirst: true,
+					mobileFirst: true
 				});
 
 			} else {
