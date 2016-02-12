@@ -606,8 +606,8 @@ header {
         padding: 16px;
 
         p {
-          @include font-size(16px);
-          @include line-height(20px);
+          @include font-size(12px);
+          @include line-height(16px);
         }
       }
     }
@@ -694,7 +694,7 @@ header {
       }
       h2 {
         position: inherit;
-        @include font-size(40px);
+        @include font-size(36px);
         @include line-height(40px);
       }
     }
@@ -705,6 +705,7 @@ header {
     .slick-slide {
       overflow: hidden;
       text-align: center;
+      padding: 16px;
 
       img {
         display: inline-block !important;
@@ -717,8 +718,8 @@ header {
       padding: 16px;
 
       p {
-        @include font-size(16px);
-        @include line-height(20px);
+        @include font-size(12px);
+        @include line-height(16px);
       }
     }
   }
