@@ -597,21 +597,6 @@ header {
       }
     }
   }
-
-  @media #{$breakpoint-smartphone-big} {
-    padding: 18px 0;
-
-    figure {
-      figcaption {
-        padding: 16px;
-
-        p {
-          @include font-size(12px);
-          @include line-height(16px);
-        }
-      }
-    }
-  }
 }
 
 .product-item {
@@ -684,8 +669,29 @@ header {
       @include line-height(30px);
     }
   }
+}
 
-  @media #{$breakpoint-smartphone-big} {
+#terrestreDetailServicioMobile, #terrestreDetailProductMobile {
+  background-color: $dark-red;
+  color: $white;
+  padding: 18px 0;
+
+  &.open {
+    display: block;
+  }
+
+  figure {
+    figcaption {
+      padding: 16px;
+
+      p {
+        @include font-size(12px);
+        @include line-height(16px);
+      }
+    }
+  }
+
+  .product-item {
     .item-header {
       padding: 14px 0 10px;
 
@@ -733,7 +739,8 @@ header {
   background-size: cover;
 }
 
-#maritimoDetailServicio, #maritimoDetailProducto {
+#maritimoDetailServicio, #maritimoDetailProducto,
+#maritimoDetailServicioMobile, #maritimoDetailProductoMobile {
   background-color: $blue;
   color: $white;
   padding: 30px 0;

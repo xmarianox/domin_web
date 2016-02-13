@@ -101,12 +101,12 @@ $(document).ready(function() {
 		$('#terrestreView a').click(function(event) {
 			event.preventDefault();
 			$('.detail').removeClass('open');
-			var target = $(this).attr('data-target');
+			var target = $(this).attr('data-target-mobile');
+			console.log(target);
 			$(target).addClass('open animated slideInUp');
-			$('html, body').animate({ scrollTop: $(target).offset().top + 600 }, 1000);
 
-			if (target === '#terrestreDetailProduct') {
-				$('#terrestreDetailProduct .row').slick({
+			if (target === '#terrestreDetailProductMobile') {
+				$('#terrestreDetailProductMobile .row').slick({
 					arrows: true,
 					infinite: false,
 					mobileFirst: true,
@@ -121,7 +121,7 @@ $(document).ready(function() {
 				});
 
 			} else {
-				$('#terrestreDetailServicio .row').slick({
+				$('#terrestreDetailServicioMobile .row').slick({
 					arrows: true,
 					infinite: false,
 					mobileFirst: true,
@@ -132,11 +132,6 @@ $(document).ready(function() {
 		});
 
 	} else {
-		$('.overlay a').click(function() {
-			$('body').removeClass('hidden');
-			$('.overlay').fadeToggle();
-		});
-
 		$('#main-slider-desktop').slick({
 			autoplay: true,
 			fade: true,
@@ -219,6 +214,11 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	$('.overlay a').click(function() {
+		$('body').removeClass('hidden');
+		$('.overlay').fadeToggle();
+	});
 
 	// menu
 	$('.lines-button').click(function(event) {
