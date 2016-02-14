@@ -49,6 +49,12 @@ function contacto() {
 		return false;
 	}
 }
+// Calculate imageWidth
+function calculateImages() {
+	'use strict';
+	var vw = $(window).innerWidth();
+	$('.product-item img').css('width', (vw - 31));
+}
 
 var mobileFirst;
 
@@ -97,6 +103,9 @@ $(document).ready(function() {
 			$('html, body').animate({ scrollTop: $(target).offset().top - 600 }, 1000);
 		});
 
+		// Calculate imageWidth
+		calculateImages();
+
 		// Terrestre detailView
 		$('#terrestreView a').click(function(event) {
 			event.preventDefault();
@@ -104,6 +113,12 @@ $(document).ready(function() {
 			var target = $(this).attr('data-target-mobile');
 			$(target).addClass('open animated slideInUp');
 			$('html, body').animate({ scrollTop: $('#terrestreView').offset().top + 600 }, 1000);
+
+			// $('#terrestreDetailProductMobile .row').on('init', function(slick) {
+			// 	// images width
+			// 	console.log(slick);
+				
+			// });
 
 			if (target === '#terrestreDetailProductMobile') {
 				$('#terrestreDetailProductMobile .row').slick({
@@ -128,6 +143,44 @@ $(document).ready(function() {
 					mobileFirst: true,
 					adaptiveHeight: false,
 					slidesToShow: 1
+				});
+			}
+		});
+		// Maritimo detailView
+		$('#maritimoView a').click(function(event) {
+			event.preventDefault();
+			$('.detail').removeClass('open');
+			var target = $(this).attr('data-target-mobile');
+			$(target).addClass('open animated slideInUp');
+			$('html, body').animate({ scrollTop: $('#maritimoView').offset().top + 600 }, 1000);
+
+			if (target === '#maritimoDetailServicioMobile') {
+				$('#maritimoDetailServicioMobile .row').slick({
+					arrows: false,
+					infinite: false,
+					mobileFirst: true,
+					adaptiveHeight: true,
+					slidesToShow: 1
+				});
+
+				$('.maritimoSlider').slick({
+					arrows: true,
+					infinite: false,
+					mobileFirst: true
+				});
+			} else {
+				$('#maritimoDetailProductoMobile .row').slick({
+					arrows: false,
+					infinite: false,
+					mobileFirst: true,
+					adaptiveHeight: true,
+					slidesToShow: 1
+				});
+
+				$('.maritimoProductoSlider').slick({
+					arrows: true,
+					infinite: false,
+					mobileFirst: true
 				});
 			}
 		});

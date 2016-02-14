@@ -707,7 +707,9 @@ header {
   }
 }
 
-#terrestreDetailServicioMobile, #terrestreDetailProductMobile {
+#terrestreDetailServicioMobile, #terrestreDetailProductMobile,
+#maritimoDetailServicioMobile, #maritimoDetailProductoMobile {
+  @include size(100%, 600px);
   background-color: $dark-red;
   color: $white;
   padding: 18px 0;
@@ -791,12 +793,8 @@ header {
     .slick-slide {
       overflow: hidden;
       text-align: center;
-      padding: 16px;
-
       img {
-        @include size(initial, initial);
-        margin: 0 auto;
-
+        @include size(initial, auto);
       }
     }
     .slick-prev {
@@ -816,6 +814,15 @@ header {
       p {
         @include font-size(13px);
         @include line-height(16px);
+      }
+    }
+
+    @media #{$breakpoint-smartphone-small} {
+      .item-header {
+        h2 {
+          @include font-size(26px);
+          @include line-height(36px);
+        }
       }
     }
   }
