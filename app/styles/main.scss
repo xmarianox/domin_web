@@ -198,6 +198,11 @@ header {
       top: -3px;
     }
   }
+  @media #{$breakpoint-smartphone-small} {
+    .logo {
+      top: 15px;
+    }
+  }
 }
 .content {
   @include size(100%, auto);
@@ -305,6 +310,12 @@ header {
       @include line-height(38px);
     }
   }
+  @media #{$breakpoint-smartphone-small} {
+    h1 {
+      @include font-size(26px);
+      @include line-height(30px);
+    }
+  }
 }
 
 #main-slider-desktop {
@@ -372,6 +383,7 @@ header {
     }
   }
 }
+
 .black-label {
   display: inline-block;
   vertical-align: middle;
@@ -390,6 +402,11 @@ header {
 
   @media #{$breakpoint-smartphone-big} {
     padding: 13px 23px 10px;
+  }
+
+  @media #{$breakpoint-smartphone-small} {
+    @include font-size(25px);
+    padding: 12px 20px 9px;
   }
 }
 
@@ -441,6 +458,10 @@ header {
       @include size(100%, auto);
     }
   }
+
+  @media #{$breakpoint-smartphone-small} {
+    padding: 30px 16px;
+  }
 }
 
 // =============================================================================
@@ -484,6 +505,12 @@ header {
       @include line-height(46px);
     }
   }
+  @media #{$breakpoint-smartphone-small} {
+    h1 {
+      @include font-size(40px);
+      @include line-height(36px);
+    }
+  }
 }
 
 // =============================================================================
@@ -524,6 +551,15 @@ header {
       h1 {
         @include font-size(70px);
         @include line-height(80px);
+      }
+    }
+  }
+
+  @media #{$breakpoint-smartphone-small} {
+    .isologo-container {
+      h1 {
+        @include font-size(60px);
+        @include line-height(70px);
       }
     }
   }
@@ -717,8 +753,24 @@ header {
       padding: 30px;
 
       p {
-        @include font-size(14px);
-        @include line-height(18px);
+        @include font-size(13px);
+        @include line-height(16px);
+      }
+    }
+
+    @media #{$breakpoint-smartphone-small} {
+      .icon-description {
+        p {
+          @include font-size(10px);
+          @include line-height(20px);
+        }
+      }
+      figcaption {
+        padding: 16px;
+        p {
+          @include font-size(10px);
+          @include line-height(13px);
+        }
       }
     }
   }
@@ -755,15 +807,15 @@ header {
     }
     .slick-prev, .slick-next {
       &:before {
-        @include font-size(25px);
+        @include font-size(20px);
       }
     }
 
     .product-description {
       padding: 16px;
       p {
-        @include font-size(14px);
-        @include line-height(18px);
+        @include font-size(13px);
+        @include line-height(16px);
       }
     }
   }
@@ -863,12 +915,23 @@ header {
       @include line-height(60px);
     }
   }
+  @media #{$breakpoint-smartphone-small} {
+    h1 {
+      @include font-size(45px);
+      @include line-height(55px);
+      padding: 20px 0 15px;
+    }
+  }
 }
 
 iframe {
   @include size(100%, 100%);
   min-height: 450px;
   display: block;
+  @media #{$breakpoint-smartphone-small} {
+    min-height: 300px;
+    margin-bottom: 30px;
+  }
 }
 
 // forms
@@ -885,6 +948,7 @@ input, textarea {
   display: block;
   color: black;
   padding: 14px;
+  -webkit-appearance: none;
   @include border-radius(0px);
   // font
   @include font-size(14px);

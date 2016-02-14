@@ -216,9 +216,16 @@ $(document).ready(function() {
 		});
 	}
 
-	$('.overlay a').click(function() {
+	$('.close_overlay').click(function(event) {
+		event.preventDefault();
 		$('body').removeClass('hidden');
-		$('.overlay').fadeToggle();
+		$('.overlay').hide();
+	});
+
+	$('.overlay a').click(function(event) {
+		event.preventDefault();
+		$('body').removeClass('hidden');
+		$('.overlay').hide();
 	});
 
 	// menu

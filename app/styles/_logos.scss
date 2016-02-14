@@ -17,8 +17,11 @@
 		@media #{$breakpoint-smartphone-big} {
 			background: url(../images/logo-header-mobile.png) 0 0 no-repeat;
 			background-size: cover;
-			//@include size(450px, 54px);
 			@include size(300px, 36px);
+		}
+
+		@media #{$breakpoint-smartphone-small} {
+			@include size(220px, 26px);
 		}
 	}
 	&.logo_domin_footer {
@@ -50,6 +53,9 @@
 		}
 		@media #{$breakpoint-tablet-big} {
 			@include size(160px, 160px);
+		}
+		@media #{$breakpoint-smartphone-small} {
+			@include size(120px, 120px);
 		}
 	}
 }

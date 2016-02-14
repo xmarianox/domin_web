@@ -36,6 +36,18 @@ button {
     &:hover {
       background-color: lighten($black, 10%);
     }
+
+    @media #{$breakpoint-smartphone-big} {
+      @include font-size(30px);
+      @include line-height(50px);
+    }
+
+    @media #{$breakpoint-smartphone-small} {
+      margin: 0;
+      padding: 0 20px;
+      @include font-size(25px);
+      @include line-height(45px);
+    }
   }
 
   &.btn-plus {
