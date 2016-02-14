@@ -102,8 +102,8 @@ $(document).ready(function() {
 			event.preventDefault();
 			$('.detail').removeClass('open');
 			var target = $(this).attr('data-target-mobile');
-			console.log(target);
 			$(target).addClass('open animated slideInUp');
+			$('html, body').animate({ scrollTop: $('#terrestreView').offset().top + 600 }, 1000);
 
 			if (target === '#terrestreDetailProductMobile') {
 				$('#terrestreDetailProductMobile .row').slick({
@@ -117,7 +117,8 @@ $(document).ready(function() {
 				$('.terrestreSlider').slick({
 					arrows: true,
 					infinite: false,
-					mobileFirst: true
+					mobileFirst: true,
+					adaptiveHeight: true
 				});
 
 			} else {
