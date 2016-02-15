@@ -113,13 +113,6 @@ $(document).ready(function() {
 			var target = $(this).attr('data-target-mobile');
 			$(target).addClass('open animated slideInUp');
 			$('html, body').animate({ scrollTop: $('#terrestreView').offset().top + 600 }, 1000);
-
-			// $('#terrestreDetailProductMobile .row').on('init', function(slick) {
-			// 	// images width
-			// 	console.log(slick);
-				
-			// });
-
 			if (target === '#terrestreDetailProductMobile') {
 				$('#terrestreDetailProductMobile .row').slick({
 					arrows: true,

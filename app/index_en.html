@@ -49,6 +49,7 @@
             <li><a href="#terrestreView" title="LAND">LAND</a></li>
             <li><a href="#maritimoView" title="MARITIME">MARITIME</a></li>
             <li><a href="#contactoView" title="CONTACT">CONTACT</a></li>
+            <li class="visible-mobile"><a href="index.html" title="ESPAÑOL">ESPAÑOL</a> <span>|</span> <a href="index_en.html" title="ENGLISH" class="active">ENGLISH</a></li>
           </ul>
         </div>
       </header>
@@ -56,13 +57,19 @@
       <article>
         <section id="quienesSomosView" class="full-height">
 
-          <div class="isologo-container animated slideInDown">
+          <div class="isologo-container hidden-mobile animated slideInDown">
             <a href="#terrestreView" class="black-label" title="LAND">LAND</a>
             <i class="logo logo_isologo"></i>
             <a href="#maritimoView" class="black-label" title="MARITIME">MARITIME</a>
           </div>
 
-          <ul id="main-slider">
+          <div class="isologo-container visible-mobile animated slideInDown">
+            <i class="logo logo_isologo"></i>
+            <a href="#terrestreView" class="black-label" title="LAND">LAND</a>
+            <a href="#maritimoView" class="black-label" title="MARITIME">MARITIME</a>
+          </div>
+
+          <ul id="main-slider" class="hidden-mobile">
             <li>
               <img src="images/img-slider-main-1.jpg" height="1081" width="1920" alt="FIRE EXTINGUISHERS AND FIXED SYSTEMS">
               <div class="intro-container animated slideInUp">
@@ -78,6 +85,21 @@
                 <h1>LIFE-SAVING EQUIPMENT</h1>
                 <p>Sales, inspections and recertification</p>
                 <a href="#certificacionesView" class="ic ic_mouse animated infinite bounce"></a>
+              </div>
+            </li>
+          </ul>
+
+          <ul id="main-slider-mobile" class="visible-mobile">
+            <li>
+              <img src="images/img-slider-main-mobile-1.jpg" height="640" width="600" alt="FIRE EXTINGUISHERS AND FIXED SYSTEMS">
+              <div class="intro-container">
+                <h1>FIRE EXTINGUISHERS AND FIXED SYSTEMS</h1>
+              </div>
+            </li>
+            <li>
+              <img src="images/img-slider-main-mobile-2.jpg" height="640" width="600" alt="LIFE-SAVING EQUIPMENT">
+              <div class="intro-container">
+                <h1>LIFE-SAVING EQUIPMENT</h1>
               </div>
             </li>
           </ul>
@@ -118,10 +140,11 @@
           <div class="isologo-container">
             <i data-aload class="logo logo_isologo_white"></i>
             <h1>LAND</h1>
-            <a href="javascript:;" data-target="#terrestreDetailProduct" title="PRODUCTS" class="btn btn-black">PRODUCTS</a>
-            <a href="javascript:;" data-target="#terrestreDetailServicio" title="SERVICES" class="btn btn-black">SERVICES</a>
+            <a href="javascript:;" data-target="#terrestreDetailProduct" data-target-mobile="#terrestreDetailProductMobile" title="PRODUCTS" class="btn btn-black">PRODUCTS</a>
+            <a href="javascript:;" data-target="#terrestreDetailServicio" data-target-mobile="#terrestreDetailServicioMobile" title="SERVICES" class="btn btn-black">SERVICES</a>
           </div>
         </section>
+        <!-- DESKTOP -->
         <section class="detail" id="terrestreDetailServicio">
             <div class="row">
               <div class="col-4">
@@ -167,7 +190,6 @@
 
             </div><!-- row -->
         </section>
-
         <section class="detail" id="terrestreDetailProduct">
             <div class="row">
               <div class="col-2">
@@ -280,16 +302,168 @@
               </div><!-- col-2 -->
             </div><!-- row -->
         </section>
+        <!-- MOBILE -->
+        <section class="detail" id="terrestreDetailServicioMobile">
+            <div class="row">
+              <div class="col-4">
+                <figure>
+                  <img src="images/terrestre/servicios/1-extintores.jpg" height="440" width="560" alt="SERVICE OF CONTROL, MANTEINANCE AND REFILL OF FIRE EXTINGUISHERS ACCORDING TO IRAM 3517/II REGULATIONS. REGISTERED IN OPDS (BUENOS AIRES PROVINCE) AND GCBA (BUENOS AIRES CITY).">
+                  <div class="icon-description">
+                    <img src="images/terrestre/servicios/extintores.jpg" height="223" width="269" alt="FIRE EXTINGUISHERS">
+                    <p class="icon-label">FIRE EXTINGUISHERS</p>
+                  </div>
+                  <figcaption>
+                    <p>SERVICE OF CONTROL, MANTEINANCE AND REFILL OF FIRE EXTINGUISHERS ACCORDING TO IRAM 3517/II REGULATIONS. REGISTERED IN OPDS (BUENOS AIRES PROVINCE) AND GCBA (BUENOS AIRES CITY).</p>
+                  </figcaption>
+                </figure><!-- Item 1 -->
+              </div><!-- col-4 -->
+
+              <div class="col-4">
+                <figure>
+                  <img src="images/terrestre/servicios/2-instalaciones-fijas.jpg" height="440" width="560" alt="INSPECTION, MANTEINANCE AND REPAIR OF FIXED FIRE EXTINGUISHING SYSTEMS.">
+                  <div class="icon-description">
+                    <img src="images/terrestre/servicios/senaletica.jpg" height="223" width="269" alt="FIXED SYSTEMS">
+                    <p class="icon-label">FIXED SYSTEMS</p>
+                  </div>
+                  <figcaption>
+                    <p>INSPECTION, MANTEINANCE AND REPAIR OF FIXED FIRE EXTINGUISHING SYSTEMS.</p>
+                  </figcaption>
+                </figure><!-- Item 2 -->
+              </div><!-- col-4 -->
+
+              <div class="col-4">
+                <figure>
+                  <img src="images/terrestre/servicios/3-disposicion415.jpg" height="440" width="560" alt="AUTHORIZED BY G.C.B.A FOR THE MANUFACTURE, INSTALLATION, MANTEINANCE AND REPAIR OF FIXED FIRE EXTINGUISHING SYSTEMS. DISPOSITION 415 & 215 (CITY OF BUENOS AIRES GOVERNMENT) DISPOSITION 639 & RESOLUTION 643 (GUBERNAMENTAL AGENCY OF CONTROL)">
+                  <div class="icon-description">
+                    <img src="images/terrestre/servicios/valvulas.jpg" height="223" width="269" title="DISPOSITION 415/215">
+                    <p class="icon-label">DISPOSITION 415/215</p>
+                  </div>
+                  <figcaption>
+                    <p>AUTHORIZED BY G.C.B.A FOR THE MANUFACTURE, INSTALLATION, MANTEINANCE AND REPAIR OF FIXED FIRE EXTINGUISHING SYSTEMS.<br>
+                    DISPOSITION 415 & 215 (CITY OF BUENOS AIRES GOVERNMENT)<br>
+                    DISPOSITION 639 & RESOLUTION 643 (GUBERNAMENTAL AGENCY OF CONTROL)</p>
+                  </figcaption>
+                </figure><!-- Item 3 -->
+              </div><!-- col-4 -->
+
+            </div><!-- row -->
+        </section>
+        <section class="detail" id="terrestreDetailProductMobile">
+            <div class="row">
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>FIRE EXTINGUISHERS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="terrestreSlider">
+                      <li><img src="images/terrestre/productos/producto/extinguidores/47.jpg" height="178" width="269" alt="ALL TYPES AND CAPACITY OF FIRE EXTINGUISHERS: CO2, DRY POWDER, FOAM, WATER, FOR KITCHEN, ETC. PORTABLE AND WHEELED. AEROSOL FIRE EXTINGUISHERS (FIXED AND PORTABLE)"></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>ALL TYPES AND CAPACITY OF FIRE EXTINGUISHERS: CO2, DRY POWDER, FOAM, WATER, FOR KITCHEN, ETC. PORTABLE AND WHEELED. AEROSOL FIRE EXTINGUISHERS (FIXED AND PORTABLE)</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>PERSONAL PROTECTION EQUIPMENT</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul  class="terrestreSlider">
+                      <li><img src="images/terrestre/productos/producto/proteccion/33.jpg" height="178" width="269" alt="BREATHING APPARATUS, EMERGENCY ESCAPE BREATHING DEVICE (EEBD), MEDICAL OXYGEN RESUCITATORS, HELMETS, LIFEJACKETS, FIRE RESISTANT SUITS, ETC."></li>
+                      <li><img src="images/terrestre/productos/producto/proteccion/34.jpg" height="178" width="269" alt="BREATHING APPARATUS, EMERGENCY ESCAPE BREATHING DEVICE (EEBD), MEDICAL OXYGEN RESUCITATORS, HELMETS, LIFEJACKETS, FIRE RESISTANT SUITS, ETC."></li>
+                      <li><img src="images/terrestre/productos/producto/proteccion/35.jpg" height="178" width="269" alt="BREATHING APPARATUS, EMERGENCY ESCAPE BREATHING DEVICE (EEBD), MEDICAL OXYGEN RESUCITATORS, HELMETS, LIFEJACKETS, FIRE RESISTANT SUITS, ETC."></li>
+                      <li><img src="images/terrestre/productos/producto/proteccion/36.jpg" height="178" width="269" alt="BREATHING APPARATUS, EMERGENCY ESCAPE BREATHING DEVICE (EEBD), MEDICAL OXYGEN RESUCITATORS, HELMETS, LIFEJACKETS, FIRE RESISTANT SUITS, ETC."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>BREATHING APPARATUS, EMERGENCY ESCAPE BREATHING DEVICE (EEBD), MEDICAL OXYGEN RESUCITATORS, HELMETS, LIFEJACKETS, FIRE RESISTANT SUITS, ETC.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>SIGNAGE</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="terrestreSlider">
+                      <li><img src="images/terrestre/productos/producto/senaletica/28.jpg" height="178" width="269" alt="ALL KIND OF SIGNAGE FOR BUILDINGS AND EMBARKATIONS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>ALL KIND OF SIGNAGE FOR BUILDINGS AND EMBARKATIONS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>FIRE HOSES</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="terrestreSlider">
+                      <li><img src="images/terrestre/productos/producto/mangueras/38.jpg" height="178" width="269" alt="FIRE HOSES AND COUPLINGS, ALL TYPES, LENGHTS AND DIAMETERS."></li>
+                      <li><img src="images/terrestre/productos/producto/mangueras/43.jpg" height="178" width="269" alt="FIRE HOSES AND COUPLINGS, ALL TYPES, LENGHTS AND DIAMETERS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>FIRE HOSES AND COUPLINGS, ALL TYPES, LENGHTS AND DIAMETERS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>SPECIAL VALVES</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="terrestreSlider">
+                      <li><img src="images/terrestre/productos/producto/valvulas/30.jpg" height="178" width="269" alt="SPECIAL VALVES FOR FIXED SYSTEMS."></li>
+                      <li><img src="images/terrestre/productos/producto/valvulas/31.jpg" height="178" width="269" alt="SPECIAL VALVES FOR FIXED SYSTEMS."></li>
+                      <li><img src="images/terrestre/productos/producto/valvulas/32.jpg" height="178" width="269" alt="SPECIAL VALVES FOR FIXED SYSTEMS."></li>
+                      <li><img src="images/terrestre/productos/producto/valvulas/37.jpg" height="178" width="269" alt="SPECIAL VALVES FOR FIXED SYSTEMS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>SPECIAL VALVES FOR FIXED SYSTEMS</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>FIXED SYSTEMS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="terrestreSlider">
+                      <li><img src="images/terrestre/productos/producto/instalaciones/41.jpg" height="178" width="269" alt="ADVICE, PROJECTS PROVISION, ASSEMBLY AND PROVISION OF MATERIALS FOR FIXED FIRE EXTINGUISHING SYSTEMS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>ADVICE, PROJECTS PROVISION, ASSEMBLY AND PROVISION OF MATERIALS FOR FIXED FIRE EXTINGUISHING SYSTEMS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+            </div><!-- row -->
+        </section>
 
         <section data-aload id="maritimoView" class="full-height">
           <div class="isologo-container">
             <i data-aload class="logo logo_isologo_white"></i>
             <h1>MARITIME</h1>
-            <a href="javascript:;" data-target="#maritimoDetailProducto" title="PRODUCTS" class="btn btn-black">PRODUCTS</a>
-            <a href="javascript:;" data-target="#maritimoDetailServicio" title="SERVICES" class="btn btn-black">SERVICES</a>
+            <a href="javascript:;" data-target="#maritimoDetailProducto" data-target-mobile="#maritimoDetailProductoMobile" title="PRODUCTS" class="btn btn-black">PRODUCTS</a>
+            <a href="javascript:;" data-target="#maritimoDetailServicio" data-target-mobile="#maritimoDetailServicioMobile" title="SERVICES" class="btn btn-black">SERVICES</a>
           </div>
         </section>
-
+        <!-- DESKTOP -->
         <section class="detail" id="maritimoDetailProducto">
             <div class="row">
               <div class="col-2">
@@ -397,9 +571,9 @@
                   </div>
                   <div class="item-carousel">
                     <ul class="maritimoProductoSlider">
-                      <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/25.jpg" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/25.png" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
                       <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/40.jpg" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
-                      <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/46.jpg" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/46.png" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
                     </ul>
                     <div class="product-description">
                       <p>AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC.</p>
@@ -427,7 +601,6 @@
 
             </div><!-- row -->
         </section>
-
         <section class="detail" id="maritimoDetailServicio">
             <div class="row">
               <div class="col-3">
@@ -502,6 +675,207 @@
               </div><!-- col-3 -->
             </div><!-- row -->
         </section>
+        <!-- MOBILE -->
+        <section class="detail" id="maritimoDetailProductoMobile">
+            <div class="row">
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>PYROTECHNICS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoProductoSlider">
+                      <li><img src="images/maritimo/productos/foto-producto/pirotecnia/14.jpg" alt="SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/pirotecnia/15.jpg" alt="SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/pirotecnia/16.jpg" alt="SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/pirotecnia/20.jpg" alt="SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/pirotecnia/22.jpg" alt="SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/pirotecnia/24.jpg" alt="SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>SOLAS APPROVED NAVAL PYROTECHNICS, OPTICAL SIGNALS, SELF IGNITING LIGHTS, ETC.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>EMERGENCY RATIONS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul  class="maritimoProductoSlider">
+                      <li><img src="images/maritimo/productos/foto-producto/raciones/9.jpg" alt="SOLAS APPROVED FOOD AND WATER EMERGENCY RATIONS."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/raciones/11.jpg" alt="SOLAS APPROVED FOOD AND WATER EMERGENCY RATIONS."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/raciones/12.jpg" alt="SOLAS APPROVED FOOD AND WATER EMERGENCY RATIONS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>SOLAS APPROVED FOOD AND WATER EMERGENCY RATIONS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>MARINE LIFERAFTS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoProductoSlider">
+                      <li><img src="images/maritimo/productos/foto-producto/balsas/1-48.jpg" alt="ALL TYPES AND CAPACITY AUTOINFLATABLE LIFERAFTS IMO AND SOLAS APPROVED."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/balsas/2-48.jpg" alt="ALL TYPES AND CAPACITY AUTOINFLATABLE LIFERAFTS IMO AND SOLAS APPROVED."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>ALL TYPES AND CAPACITY AUTOINFLATABLE LIFERAFTS IMO AND SOLAS APPROVED.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>FIRE FIGHTING EQUIPMENT</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoProductoSlider">
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-incendio/43.jpg" alt="ALL TYPES AND CAPACITIES OF FIRE EXTINGUISHERS (PORTABLE AND WHEELED), FOAM APPLICATORS, FIRE HOSES, AEROSOL CAN SPRAY EXTINGUISHERS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-incendio/47.jpg" alt="ALL TYPES AND CAPACITIES OF FIRE EXTINGUISHERS (PORTABLE AND WHEELED), FOAM APPLICATORS, FIRE HOSES, AEROSOL CAN SPRAY EXTINGUISHERS, ETC."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>ALL TYPES AND CAPACITIES OF FIRE EXTINGUISHERS (PORTABLE AND WHEELED), FOAM APPLICATORS, FIRE HOSES, AEROSOL CAN SPRAY EXTINGUISHERS, ETC.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>BREATHING APPARATUS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoProductoSlider">
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-respiracion/33.jpg" alt="SELF CONTAINED BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN CYLINDERS AND REGULATORS."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-respiracion/35.jpg" alt="SELF CONTAINED BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN CYLINDERS AND REGULATORS."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-respiracion/36.jpg" alt="SELF CONTAINED BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN CYLINDERS AND REGULATORS."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-respiracion/39.jpg" alt="SELF CONTAINED BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN CYLINDERS AND REGULATORS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>SELF CONTAINED BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN CYLINDERS AND REGULATORS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>LIFESAVING EQUIPMENT</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoProductoSlider">
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/25.png" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/40.jpg" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
+                      <li><img src="images/maritimo/productos/foto-producto/equipos-salvavidas/46.png" alt="AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>AUTOINFLATABLE AND RIGID LIFEJACKETS, IMMERSION SUITS, LIFEBOUYS, ETC.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>GAS DETECTION</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoProductoSlider">
+                      <li><img src="images/maritimo/productos/foto-producto/deteccion/8.jpg" alt="PERSONAL GAS DETECTORS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>PERSONAL GAS DETECTORS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+            </div><!-- row -->
+        </section>
+        <section class="detail" id="maritimoDetailServicioMobile">
+            <div class="row">
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>AUTOINFLATABLE LIFERAFTS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoSlider">
+                      <li><img src="images/maritimo/servicios/servicio/balsas/1-blasas.jpg" height="269" width="406" alt="INSPECTION, MANTEINANCE & CERTIFICATION OF AUTOINFLATABLE LIFERAFTS ACCORDING TO IMO 761(A)18 RESOLUTION. PNA (NATIONAL MARINE AUTHORITY) APPROVED SERVICE STATION."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>INSPECTION, MANTEINANCE & CERTIFICATION OF AUTOINFLATABLE LIFERAFTS ACCORDING TO IMO 761(A)18 RESOLUTION. PNA (NATIONAL MARINE AUTHORITY) APPROVED SERVICE STATION.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>FIRE FIGHTING EQUIPMENT</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoSlider">
+                      <li><img src="images/maritimo/servicios/servicio/equipos-incendio/47.jpg" height="269" width="406" alt="INSPECTION, MANTEINANCE & CERTIFICATION OF FIRE EXTINGUISHERS, PORTABLE FOAM APPLICATORS AND FIXED FIRE EXTINGUISHING SYSTEMS. FOAM SAMPLE ANALYSIS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>INSPECTION, MANTEINANCE & CERTIFICATION OF FIRE EXTINGUISHERS, PORTABLE FOAM APPLICATORS AND FIXED FIRE EXTINGUISHING SYSTEMS. FOAM SAMPLE ANALYSIS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>BREATHING APPARATUS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoSlider">
+                      <li><img src="images/maritimo/servicios/servicio/equipos-respiracion/33.jpg" height="269" width="406" alt="INSPECTION, MANTEINANCE & CERTIFICATION OF BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN REGULATORS AND CYLINDERS. INSPECTION AND AIR QUALITY TEST OF AIR COMPRESSORS."></li>
+                      <li><img src="images/maritimo/servicios/servicio/equipos-respiracion/35.jpg" height="269" width="406" alt="INSPECTION, MANTEINANCE & CERTIFICATION OF BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN REGULATORS AND CYLINDERS. INSPECTION AND AIR QUALITY TEST OF AIR COMPRESSORS."></li>
+                      <li><img src="images/maritimo/servicios/servicio/equipos-respiracion/36.jpg" height="269" width="406" alt="INSPECTION, MANTEINANCE & CERTIFICATION OF BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN REGULATORS AND CYLINDERS. INSPECTION AND AIR QUALITY TEST OF AIR COMPRESSORS."></li>
+                      <li><img src="images/maritimo/servicios/servicio/equipos-respiracion/39.jpg" height="269" width="406" alt="INSPECTION, MANTEINANCE & CERTIFICATION OF BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN REGULATORS AND CYLINDERS. INSPECTION AND AIR QUALITY TEST OF AIR COMPRESSORS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>INSPECTION, MANTEINANCE & CERTIFICATION OF BREATHING APPARATUS, COMPRESSED AIR CYLINDERS, EMERGENCY ESCAPE BREATHING DEVICES (EEBD), MEDICAL OXYGEN REGULATORS AND CYLINDERS. INSPECTION AND AIR QUALITY TEST OF AIR COMPRESSORS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+
+              <div class="col-12">
+                <div class="product-item">
+                  <div class="item-header">
+                    <h2>LIFEJACKETS & IMMERSION SUITS</h2>
+                  </div>
+                  <div class="item-carousel">
+                    <ul class="maritimoSlider">
+                      <li><img src="images/maritimo/servicios/servicio/balsas/1-blasas.jpg" height="269" width="406" alt="INSPECTION, MANTEINANCE & CERTIFICATION OF INFLATABLE & RIGID LIFEJACKETS AND IMMERSION SUITS."></li>
+                    </ul>
+                    <div class="product-description">
+                      <p>INSPECTION, MANTEINANCE & CERTIFICATION OF INFLATABLE & RIGID LIFEJACKETS AND IMMERSION SUITS.</p>
+                    </div>
+                  </div>
+                </div><!-- product-item -->
+              </div>
+            </div><!-- row -->
+        </section>
 
         <section id="contactoView">
           <div class="row">
@@ -563,6 +937,7 @@
 
       <article class="overlay">
         <section>
+          <a href="javascript:;" title="cerrar" class="close_overlay"><i class="fa fa-times-circle"></i></a>
           <a href="images/extincion_por_aerosoles.pdf" target="_blank" title="AEROSOL EXTINCTION">
             <h1>NEW TECHNOLOGIES</h1>
             <h2>CUTTING EDGE SOLUTIONS IN FIRE PROTECTION SYSTEMS</h2>
@@ -596,6 +971,7 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="/bower_components/browser-detector/detect-browser.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
