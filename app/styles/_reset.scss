@@ -16,5 +16,6 @@ blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 *{ -webkit-font-smoothing: antialiased; outline: none; }
+body { -webkit-text-size-adjust: none; }
 // aload snippet
 [data-aload] { background-image: none !important; }

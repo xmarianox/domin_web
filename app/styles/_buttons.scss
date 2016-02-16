@@ -59,6 +59,10 @@ button {
     @include font-size(50px);
     @include line-height(48px);
     font-weight: lighter;
+
+    &.android {
+      @include line-height(60px);
+    }
   }
 
   @media #{$breakpoint-laptop-small} {

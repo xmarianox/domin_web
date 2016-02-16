@@ -755,23 +755,23 @@ header {
       padding: 30px;
 
       p {
-        @include font-size(13px);
-        @include line-height(16px);
+        @include font-size(16px);
+        @include line-height(18px);
       }
     }
 
     @media #{$breakpoint-smartphone-small} {
       .icon-description {
         p {
-          @include font-size(10px);
-          @include line-height(20px);
+          @include font-size(14px);
+          @include line-height(28px);
         }
       }
       figcaption {
         padding: 16px;
         p {
-          @include font-size(10px);
-          @include line-height(13px);
+          @include font-size(14px);
+          @include line-height(16px);
         }
       }
     }
@@ -812,8 +812,8 @@ header {
     .product-description {
       padding: 16px;
       p {
-        @include font-size(13px);
-        @include line-height(16px);
+        @include font-size(16px);
+        @include line-height(18px);
       }
     }
 
@@ -822,6 +822,12 @@ header {
         h2 {
           @include font-size(24px);
           @include line-height(36px);
+        }
+      }
+      .product-description {
+        p {
+          @include font-size(14px);
+          @include line-height(16px);
         }
       }
     }

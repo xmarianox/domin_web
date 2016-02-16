@@ -1,5 +1,5 @@
 /* jshint smarttabs:true */
-/* global $, aload, SmartPhone */
+/* global $, aload, SmartPhone  */
 
 // Process del envio.
 function enviado() {
@@ -57,6 +57,7 @@ function calculateImages() {
 }
 
 var mobileFirst;
+var androidPhone;
 
 // Load event
 $(window).load(function() {
@@ -69,6 +70,7 @@ $(document).ready(function() {
 	'use strict';
 
 	mobileFirst = SmartPhone.isAny();
+	androidPhone = SmartPhone.isAndroid();
 
 	// anchor navigation
 	$('a[href*=#]:not([href=#])').click(function() {
@@ -83,6 +85,9 @@ $(document).ready(function() {
 		}
 	});
 
+	if (androidPhone) {
+		$('.btn-plus').addClass('android');
+	}
 	if (mobileFirst) {
 		$('body').removeClass('hidden');
 		$('.overlay').hide();
@@ -268,11 +273,11 @@ $(document).ready(function() {
 		$('.overlay').hide();
 	});
 
-	$('.overlay a').click(function(event) {
-		event.preventDefault();
-		$('body').removeClass('hidden');
-		$('.overlay').hide();
-	});
+	// $('.overlay a').click(function(event) {
+	// 	event.preventDefault();
+	// 	$('body').removeClass('hidden');
+	// 	$('.overlay').hide();
+	// });
 
 	// menu
 	$('.lines-button').click(function(event) {
