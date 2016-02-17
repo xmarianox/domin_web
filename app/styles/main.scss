@@ -147,6 +147,9 @@ main, article {
         @include line-height(30px);
       }
     }
+    @media #{$breakpoint-smartphone-big} {
+      @include size(90%, auto);
+    }
   }
 }
 
@@ -156,7 +159,7 @@ main, article {
 .visible-mobile {
   display: none;
 }
-@media #{$breakpoint-smartphone-big} {
+@media #{$breakpoint-tablet-port} {
   .hidden-mobile {
     display: none !important;
   }
@@ -377,7 +380,7 @@ header {
   .logo {
     vertical-align: middle;
 
-    @media #{$breakpoint-smartphone-big} {
+    @media #{$breakpoint-tablet-port} {
       display: block;
       margin: 0 auto 16px;
     }

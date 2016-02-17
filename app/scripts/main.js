@@ -89,8 +89,6 @@ $(document).ready(function() {
 		$('.btn-plus').addClass('android');
 	}
 	if (mobileFirst) {
-		$('body').removeClass('hidden');
-		$('.overlay').hide();
 
 		$('#main-slider-mobile').slick({
 			autoplay: true,
