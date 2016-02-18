@@ -42,7 +42,8 @@ $grid-max-width: 1280px;
 
 // breakpoints
 $breakpoint-small: "only screen and (min-width: 20em)";
-$breakpoint-medium: "only screen and (min-width: 30em)";
+//$breakpoint-medium: "only screen and (min-width: 30em)";
+$breakpoint-medium: "only screen and (min-width: 48.063em)";
 
 // Macbook Pro 13"
 $breakpoint-laptop-small: "only screen and (max-width: 80em)";

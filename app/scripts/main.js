@@ -113,6 +113,10 @@ $(document).ready(function() {
 		// Calculate imageWidth
 		calculateImages();
 
+		if (SmartPhone.isIPad) {
+			$('body').addClass('ipad');
+		}
+
 		// Terrestre detailView
 		$('#terrestreView a').click(function(event) {
 			event.preventDefault();
@@ -184,7 +188,6 @@ $(document).ready(function() {
 				});
 			}
 		});
-
 	} else {
 		$('#main-slider-desktop').slick({
 			autoplay: true,
@@ -199,7 +202,7 @@ $(document).ready(function() {
 			event.preventDefault();
 			var target = $(this).attr('href');
 			$(target).toggleClass('open animated slideInUp');
-			$('html, body').animate({ scrollTop: $(window).offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#quienesSomosDetail').offset().top - 400 }, 1000);
 		});
 
 		// Terrestre detailView

@@ -30,6 +30,16 @@ body {
   &.hidden {
     overflow: hidden;
   }
+
+  &.ipad {
+    #terrestreDetailServicioMobile, #terrestreDetailProductMobile, #maritimoDetailServicioMobile, #maritimoDetailProductoMobile {
+      height: 780px;
+    }
+
+    .product-item .product-description {
+      min-height: 140px;
+    }
+  }
 }
 .browserupgrade {
   margin: 0.2em 0;
@@ -836,6 +846,8 @@ header {
     }
   }
 }
+
+
 
 // =============================================================================
 // maritimoView
