@@ -32,7 +32,7 @@ if( $form == "contacto" ) {
 	$FromName  = $_POST["nombre"];
 	$FromEmail = $_POST["mail"];
 	$ReplyTo   = $FromEmail;
-	$ToEmail = "xsin.crueldadx@gmail.com";
+	$ToEmail = "info@gdominsrl.com.ar";
 	$Subject   = "Consulta desde el formulario del sitio web";
 	// Datos sobre la persona
 	$consulta = $_POST['consulta'];
