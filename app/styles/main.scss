@@ -503,7 +503,7 @@ header {
 
     li {
       display: inline-block;
-      vertical-align: bottom;
+      vertical-align: middle;
       margin: 0 15px;
 
       @media #{$breakpoint-tablet-big} {
